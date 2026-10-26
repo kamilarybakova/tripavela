@@ -1,0 +1,992 @@
+{
+  "cityId": "baku",
+  "zones": [
+    {
+      "id": "old",
+      "name": "Ичеришехер",
+      "lat": 40.3663,
+      "lon": 49.8372,
+      "image": "assets/images/baku-old-0.jpg"
+    },
+    {
+      "id": "center",
+      "name": "Низами / Сахиль",
+      "lat": 40.3712,
+      "lon": 49.8367,
+      "image": "assets/images/baku-center-0.jpg"
+    },
+    {
+      "id": "water",
+      "name": "Бульвар / Port Baku",
+      "lat": 40.3703,
+      "lon": 49.8516,
+      "image": "assets/images/baku-water-0.jpg"
+    },
+    {
+      "id": "south",
+      "name": "Азнефть / южный бульвар",
+      "lat": 40.3593,
+      "lon": 49.835,
+      "image": "assets/images/baku-south-0.jpg"
+    },
+    {
+      "id": "north",
+      "name": "28 Мая / Насими",
+      "lat": 40.379,
+      "lon": 49.848,
+      "image": "assets/images/baku-north-0.jpg"
+    }
+  ],
+  "pois": [
+    {
+      "id": "baku-old-0",
+      "zone": "old",
+      "name": "Девичья башня: снаружи",
+      "area": "Ичеришехер",
+      "kind": "История",
+      "lat": 40.3663,
+      "lon": 49.8372,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Осмотрите основание башни с площади и пройдите по прилегающему переулку. Подъём и музей не включены.",
+      "address": "Девичья башня: снаружи, Ичеришехер, Баку, Азербайджан",
+      "image": "assets/images/baku-old-0.jpg",
+      "imageCaption": "Фотография места или его окрестностей",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-old-1",
+      "zone": "old",
+      "name": "Дворец Ширваншахов: площадь",
+      "area": "Ичеришехер",
+      "kind": "История",
+      "lat": 40.3662,
+      "lon": 49.8334,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Прогулка по улице у дворцового комплекса; внутренние залы требуют отдельного билета.",
+      "address": "Дворец Ширваншахов: площадь, Ичеришехер, Баку, Азербайджан",
+      "image": "assets/images/baku-old-1.jpg",
+      "imageCaption": "Фотография места или его окрестностей",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-old-2",
+      "zone": "old",
+      "name": "Улица Кичик Гала",
+      "area": "Ичеришехер",
+      "kind": "Прогулка",
+      "lat": 40.3673,
+      "lon": 49.8328,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Каменные переулки вдоль крепостной стены. Здесь лучше идти медленно: покрытия неровные.",
+      "address": "Улица Кичик Гала, Ичеришехер, Баку, Азербайджан",
+      "image": "assets/images/baku-old-2.jpg",
+      "imageCaption": "Фотография места или его окрестностей",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-old-3",
+      "zone": "old",
+      "name": "Сувенирные лавки Асафа Зейналлы",
+      "area": "Ичеришехер",
+      "kind": "Шопинг",
+      "lat": 40.3658,
+      "lon": 49.8362,
+      "minutes": 45,
+      "open": 600,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Небольшие лавки с керамикой, ковровыми мотивами и сувенирами. Сравните цены до покупки.",
+      "address": "Сувенирные лавки Асафа Зейналлы, Ичеришехер, Баку, Азербайджан",
+      "image": "assets/images/baku-old-3.jpg",
+      "imageCaption": "Иллюстрация города или района · не точный вид остановки",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-old-4",
+      "zone": "old",
+      "name": "Караван-сараи на улице Бёюк Гала",
+      "area": "Ичеришехер",
+      "kind": "История",
+      "lat": 40.367,
+      "lon": 49.837,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Исторические фасады караван-сараев на городской улице. Доступ во внутренние помещения не предполагается.",
+      "address": "Караван-сараи на улице Бёюк Гала, Ичеришехер, Баку, Азербайджан",
+      "image": "assets/images/baku-old-4.jpg",
+      "imageCaption": "Фотография места или его окрестностей",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-old-5",
+      "zone": "old",
+      "name": "Чай в Ичеришехере",
+      "area": "Ичеришехер",
+      "kind": "Еда",
+      "lat": 40.3668,
+      "lon": 49.8354,
+      "minutes": 45,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Выберите открытое кафе в старом городе и посмотрите меню до заказа. Чай и сладости оплачиваются отдельно.",
+      "address": "Чай в Ичеришехере, Ичеришехер, Баку, Азербайджан",
+      "image": "assets/images/baku-old-5.jpg",
+      "imageCaption": "Иллюстрация блюда или напитка",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-center-0",
+      "zone": "center",
+      "name": "Площадь Фонтанов",
+      "area": "Низами / Сахиль",
+      "kind": "Прогулка",
+      "lat": 40.3712,
+      "lon": 49.8367,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Пешеходная площадь среди городских кафе. Хорошая отправная точка для знакомства с центром.",
+      "address": "Площадь Фонтанов, Низами / Сахиль, Баку, Азербайджан",
+      "image": "assets/images/baku-center-0.jpg",
+      "imageCaption": "Фотография места или его окрестностей",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-center-1",
+      "zone": "center",
+      "name": "Улица Низами: пешеходная часть",
+      "area": "Низами / Сахиль",
+      "kind": "Шопинг",
+      "lat": 40.3728,
+      "lon": 49.8401,
+      "minutes": 45,
+      "open": 600,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Торговая пешеходная улица с магазинами одежды и городскими фасадами.",
+      "address": "Улица Низами: пешеходная часть, Низами / Сахиль, Баку, Азербайджан",
+      "image": "assets/images/baku-center-1.jpg",
+      "imageCaption": "Иллюстрация города Баку: Nizami street-Baku-01.jpg",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-center-2",
+      "zone": "center",
+      "name": "Парк Сахиль",
+      "area": "Низами / Сахиль",
+      "kind": "Природа",
+      "lat": 40.3721,
+      "lon": 49.8463,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Небольшая зелёная пауза в центре рядом с метро Sahil.",
+      "address": "Парк Сахиль, Низами / Сахиль, Баку, Азербайджан",
+      "image": "assets/images/baku-center-2.jpg",
+      "imageCaption": "Иллюстрация города или района · не точный вид остановки",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-center-3",
+      "zone": "center",
+      "name": "Музей литературы: фасад",
+      "area": "Низами / Сахиль",
+      "kind": "Искусство",
+      "lat": 40.3702,
+      "lon": 49.835,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Посмотрите фасад музея имени Низами со стороны площади. Внутренняя экспозиция не включена.",
+      "address": "Музей литературы: фасад, Низами / Сахиль, Баку, Азербайджан",
+      "image": "assets/images/baku-center-3.jpg",
+      "imageCaption": "Фотография места или его окрестностей",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-center-4",
+      "zone": "center",
+      "name": "Пассаж на улице Низами",
+      "area": "Низами / Сахиль",
+      "kind": "Шопинг",
+      "lat": 40.3725,
+      "lon": 49.8383,
+      "minutes": 45,
+      "open": 600,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Прогулка вдоль витрин центрального квартала; набор магазинов меняется.",
+      "address": "Пассаж на улице Низами, Низами / Сахиль, Баку, Азербайджан",
+      "image": "assets/images/baku-center-4.jpg",
+      "imageCaption": "Иллюстрация города Баку: Nizami street in Baku, 2010.jpg",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-center-5",
+      "zone": "center",
+      "name": "Обед в центре Баку",
+      "area": "Низами / Сахиль",
+      "kind": "Еда",
+      "lat": 40.3715,
+      "lon": 49.839,
+      "minutes": 45,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Выберите заведение с опубликованным меню рядом с площадью Фонтанов.",
+      "address": "Обед в центре Баку, Низами / Сахиль, Баку, Азербайджан",
+      "image": "assets/images/baku-center-5.jpg",
+      "imageCaption": "Иллюстрация города Баку: Nizami Street, Baku - Nizami8292.jpg",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-water-0",
+      "zone": "water",
+      "name": "Парк Бульвар",
+      "area": "Бульвар / Port Baku",
+      "kind": "Шопинг",
+      "lat": 40.3703,
+      "lon": 49.8516,
+      "minutes": 45,
+      "open": 600,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Торговый центр у Приморского бульвара: магазины и возможность передохнуть внутри.",
+      "address": "Парк Бульвар, Бульвар / Port Baku, Баку, Азербайджан",
+      "image": "assets/images/baku-water-0.jpg",
+      "imageCaption": "Иллюстрация города Баку: Baku Boulevard Park.jpg",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-water-1",
+      "zone": "water",
+      "name": "Приморский бульвар: центр",
+      "area": "Бульвар / Port Baku",
+      "kind": "Море",
+      "lat": 40.3677,
+      "lon": 49.849,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Прогулка по широкой набережной Каспия. При сильном ветре сократите открытый участок.",
+      "address": "Приморский бульвар: центр, Бульвар / Port Baku, Баку, Азербайджан",
+      "image": "assets/images/baku-water-1.jpg",
+      "imageCaption": "Иллюстрация города Баку: BBMM, Baku (P1090265).jpg",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-water-2",
+      "zone": "water",
+      "name": "Площадь Свободы",
+      "area": "Бульвар / Port Baku",
+      "kind": "История",
+      "lat": 40.3737,
+      "lon": 49.854,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Обзор площади и монументального фасада Дома правительства с общедоступной стороны.",
+      "address": "Площадь Свободы, Бульвар / Port Baku, Баку, Азербайджан",
+      "image": "assets/images/baku-water-2.jpg",
+      "imageCaption": "Иллюстрация города или района · не точный вид остановки",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-water-3",
+      "zone": "water",
+      "name": "Port Baku Mall",
+      "area": "Бульвар / Port Baku",
+      "kind": "Шопинг",
+      "lat": 40.3768,
+      "lon": 49.8641,
+      "minutes": 60,
+      "open": 600,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Торговый центр с брендами и кафе. Покупки и питание не входят в стоимость прогулки.",
+      "address": "Port Baku Mall, Бульвар / Port Baku, Баку, Азербайджан",
+      "image": "assets/images/baku-water-3.jpg",
+      "imageCaption": "Иллюстрация города или района · не точный вид остановки",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-water-4",
+      "zone": "water",
+      "name": "Прогулка у Port Baku",
+      "area": "Бульвар / Port Baku",
+      "kind": "Море",
+      "lat": 40.375,
+      "lon": 49.863,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Открытый участок бульвара рядом с торговым кварталом.",
+      "address": "Прогулка у Port Baku, Бульвар / Port Baku, Баку, Азербайджан",
+      "image": "assets/images/baku-water-4.jpg",
+      "imageCaption": "Иллюстрация города Баку: Baku Fountains Square.jpg",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-water-5",
+      "zone": "water",
+      "name": "Кофе у бульвара",
+      "area": "Бульвар / Port Baku",
+      "kind": "Еда",
+      "lat": 40.3738,
+      "lon": 49.8574,
+      "minutes": 45,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Кафе в кварталах у бульвара подойдёт для паузы после прогулки. Выбор зависит от открытых заведений.",
+      "address": "Кофе у бульвара, Бульвар / Port Baku, Баку, Азербайджан",
+      "image": "assets/images/baku-water-5.jpg",
+      "imageCaption": "Иллюстрация города Баку: Baku Seaside Bulevard.JPG",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-south-0",
+      "zone": "south",
+      "name": "Музей ковра: снаружи",
+      "area": "Азнефть / южный бульвар",
+      "kind": "Искусство",
+      "lat": 40.3593,
+      "lon": 49.835,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Осмотрите здание в форме свёрнутого ковра с бульвара. Экспозиция внутри оплачивается отдельно.",
+      "address": "Музей ковра: снаружи, Азнефть / южный бульвар, Баку, Азербайджан",
+      "image": "assets/images/baku-south-0.jpg",
+      "imageCaption": "Иллюстрация города Баку: Azerbaijan Carpet Museum 02.jpg",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-south-1",
+      "zone": "south",
+      "name": "Малая Венеция: прогулка",
+      "area": "Азнефть / южный бульвар",
+      "kind": "Прогулка",
+      "lat": 40.3604,
+      "lon": 49.8355,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Прогулка у декоративных каналов; лодочная поездка не включена.",
+      "address": "Малая Венеция: прогулка, Азнефть / южный бульвар, Баку, Азербайджан",
+      "image": "assets/images/baku-south-1.jpg",
+      "imageCaption": "Иллюстрация города или района · не точный вид остановки",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-south-2",
+      "zone": "south",
+      "name": "Deniz Mall",
+      "area": "Азнефть / южный бульвар",
+      "kind": "Шопинг",
+      "lat": 40.3574,
+      "lon": 49.8387,
+      "minutes": 60,
+      "open": 600,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Торговый центр на южном участке бульвара. Совместите один-два магазина с отдыхом внутри.",
+      "address": "Deniz Mall, Азнефть / южный бульвар, Баку, Азербайджан",
+      "image": "assets/images/baku-south-2.jpg",
+      "imageCaption": "Иллюстрация города или района · не точный вид остановки",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-south-3",
+      "zone": "south",
+      "name": "Площадь Азнефть",
+      "area": "Азнефть / южный бульвар",
+      "kind": "История",
+      "lat": 40.3615,
+      "lon": 49.8328,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Площадь у входа на бульвар и подножия холма. Дороги переходите по разрешённым переходам.",
+      "address": "Площадь Азнефть, Азнефть / южный бульвар, Баку, Азербайджан",
+      "image": "assets/images/baku-south-3.jpg",
+      "imageCaption": "Иллюстрация города или района · не точный вид остановки",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-south-4",
+      "zone": "south",
+      "name": "Южный участок бульвара",
+      "area": "Азнефть / южный бульвар",
+      "kind": "Море",
+      "lat": 40.3554,
+      "lon": 49.8374,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Спокойная прогулка по широкой дорожке вдоль залива без обязательных развлечений.",
+      "address": "Южный участок бульвара, Азнефть / южный бульвар, Баку, Азербайджан",
+      "image": "assets/images/baku-south-4.jpg",
+      "imageCaption": "Иллюстрация города Баку: Azərbaycan xalça muzeyi.jpg",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-south-5",
+      "zone": "south",
+      "name": "Чай рядом с Малой Венецией",
+      "area": "Азнефть / южный бульвар",
+      "kind": "Еда",
+      "lat": 40.3607,
+      "lon": 49.8346,
+      "minutes": 45,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Пауза в кафе у южного бульвара; перед заказом проверьте меню и сервисный сбор.",
+      "address": "Чай рядом с Малой Венецией, Азнефть / южный бульвар, Баку, Азербайджан",
+      "image": "assets/images/baku-south-5.jpg",
+      "imageCaption": "Иллюстрация города Баку: Museum of Azerbaijan Carpet and Applied Art.jpg",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-north-0",
+      "zone": "north",
+      "name": "28 Mall",
+      "area": "28 Мая / Насими",
+      "kind": "Шопинг",
+      "lat": 40.379,
+      "lon": 49.848,
+      "minutes": 60,
+      "open": 600,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Торговый центр рядом с вокзалом и метро 28 May: удобен для покупок перед дорогой.",
+      "address": "28 Mall, 28 Мая / Насими, Баку, Азербайджан",
+      "image": "assets/images/baku-north-0.jpg",
+      "imageCaption": "Иллюстрация города Баку: Baku Railway Station panorama.jpg",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-north-1",
+      "zone": "north",
+      "name": "Бакинский вокзал: площадь",
+      "area": "28 Мая / Насими",
+      "kind": "История",
+      "lat": 40.3793,
+      "lon": 49.8486,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Осмотр вокзальной площади снаружи; путешествие на поезде в прогулку не входит.",
+      "address": "Бакинский вокзал: площадь, 28 Мая / Насими, Баку, Азербайджан",
+      "image": "assets/images/baku-north-1.jpg",
+      "imageCaption": "Иллюстрация города Баку: Ilham Aliyev attended opening of newly renovated Baku Railway Station.jpg",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-north-2",
+      "zone": "north",
+      "name": "Зимний парк",
+      "area": "28 Мая / Насими",
+      "kind": "Природа",
+      "lat": 40.3761,
+      "lon": 49.8372,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Широкое общественное пространство для паузы в центре.",
+      "address": "Зимний парк, 28 Мая / Насими, Баку, Азербайджан",
+      "image": "assets/images/baku-north-2.jpg",
+      "imageCaption": "Иллюстрация города или района · не точный вид остановки",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-north-3",
+      "zone": "north",
+      "name": "Улица Рашида Бейбутова",
+      "area": "28 Мая / Насими",
+      "kind": "Прогулка",
+      "lat": 40.3781,
+      "lon": 49.846,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Городская улица с фасадами и кафе, связывающая несколько центральных кварталов.",
+      "address": "Улица Рашида Бейбутова, 28 Мая / Насими, Баку, Азербайджан",
+      "image": "assets/images/baku-north-3.jpg",
+      "imageCaption": "Иллюстрация города или района · не точный вид остановки",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-north-4",
+      "zone": "north",
+      "name": "Кофе в Насими",
+      "area": "28 Мая / Насими",
+      "kind": "Еда",
+      "lat": 40.378,
+      "lon": 49.8425,
+      "minutes": 45,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Перерыв в центральном квартале без привязки к конкретной кофейне.",
+      "address": "Кофе в Насими, 28 Мая / Насими, Баку, Азербайджан",
+      "image": "assets/images/baku-north-4.jpg",
+      "imageCaption": "Иллюстрация города или района · не точный вид остановки",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "baku-north-5",
+      "zone": "north",
+      "name": "Улица Физули",
+      "area": "28 Мая / Насими",
+      "kind": "Прогулка",
+      "lat": 40.3773,
+      "lon": 49.84,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Пеший участок вдоль центральных городских кварталов с выходом к Зимнему парку.",
+      "address": "Улица Физули, 28 Мая / Насими, Баку, Азербайджан",
+      "image": "assets/images/baku-north-5.jpg",
+      "imageCaption": "Иллюстрация города или района · не точный вид остановки",
+      "sources": [
+        "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+        "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+        "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    }
+  ],
+  "local": {
+    "old": [
+      "baku-old-0",
+      "baku-old-1",
+      "baku-old-2",
+      "baku-old-3",
+      "baku-old-4",
+      "baku-old-5"
+    ],
+    "center": [
+      "baku-center-0",
+      "baku-center-1",
+      "baku-center-2",
+      "baku-center-3",
+      "baku-center-4",
+      "baku-center-5"
+    ],
+    "water": [
+      "baku-water-0",
+      "baku-water-1",
+      "baku-water-2",
+      "baku-water-3",
+      "baku-water-4",
+      "baku-water-5"
+    ],
+    "south": [
+      "baku-south-0",
+      "baku-south-1",
+      "baku-south-2",
+      "baku-south-3",
+      "baku-south-4",
+      "baku-south-5"
+    ],
+    "north": [
+      "baku-north-0",
+      "baku-north-1",
+      "baku-north-2",
+      "baku-north-3",
+      "baku-north-4",
+      "baku-north-5"
+    ]
+  },
+  "themes": [
+    {
+      "id": "classic",
+      "title": "Стены, камень и старый Баку",
+      "tags": [
+        "История",
+        "Прогулка",
+        "Шопинг",
+        "Еда"
+      ],
+      "pois": [
+        "baku-old-0",
+        "baku-old-1",
+        "baku-old-2",
+        "baku-old-3",
+        "baku-old-4",
+        "baku-old-5"
+      ]
+    },
+    {
+      "id": "art",
+      "title": "Низами: витрины и городская жизнь",
+      "tags": [
+        "Прогулка",
+        "Шопинг",
+        "Природа",
+        "Искусство",
+        "Еда"
+      ],
+      "pois": [
+        "baku-center-0",
+        "baku-center-1",
+        "baku-center-2",
+        "baku-center-3",
+        "baku-center-4",
+        "baku-center-5"
+      ]
+    },
+    {
+      "id": "sea",
+      "title": "Каспий и покупки у воды",
+      "tags": [
+        "Шопинг",
+        "Море",
+        "История",
+        "Еда"
+      ],
+      "pois": [
+        "baku-water-0",
+        "baku-water-1",
+        "baku-water-2",
+        "baku-water-3",
+        "baku-water-4",
+        "baku-water-5"
+      ]
+    },
+    {
+      "id": "food",
+      "title": "Ковры, море и Deniz Mall",
+      "tags": [
+        "Искусство",
+        "Прогулка",
+        "Шопинг",
+        "История",
+        "Море",
+        "Еда"
+      ],
+      "pois": [
+        "baku-south-0",
+        "baku-south-1",
+        "baku-south-2",
+        "baku-south-3",
+        "baku-south-4",
+        "baku-south-5"
+      ]
+    },
+    {
+      "id": "local",
+      "title": "Современный центр без спешки",
+      "tags": [
+        "Шопинг",
+        "История",
+        "Природа",
+        "Прогулка",
+        "Еда"
+      ],
+      "pois": [
+        "baku-north-0",
+        "baku-north-1",
+        "baku-north-2",
+        "baku-north-3",
+        "baku-north-4",
+        "baku-north-5"
+      ]
+    },
+    {
+      "id": "shopping",
+      "title": "Прогулка и время на покупки",
+      "tags": [
+        "Шопинг"
+      ],
+      "pois": [
+        "baku-center-0",
+        "baku-center-1",
+        "baku-center-2",
+        "baku-center-3",
+        "baku-center-4",
+        "baku-center-5"
+      ]
+    }
+  ],
+  "sources": [
+    "https://azerbaijan.travel/storage/pages/13/39c87ec5-f04f-4eab-b358-192c8f4d0a40.pdf",
+    "https://azerbaijan.travel/feel-bakus-mediterranean-atmosphere-stroll-along-the-boulevard-19909",
+    "https://azerbaijan.travel/butikler-bazarlarda-alis-veris"
+  ],
+  "departure": {
+    "old": [
+      "baku-old-5",
+      "baku-old-4",
+      "baku-old-3",
+      "baku-old-2",
+      "baku-old-1",
+      "baku-old-0"
+    ],
+    "center": [
+      "baku-center-5",
+      "baku-center-4",
+      "baku-center-3",
+      "baku-center-2",
+      "baku-center-1",
+      "baku-center-0"
+    ],
+    "water": [
+      "baku-water-5",
+      "baku-water-4",
+      "baku-water-3",
+      "baku-water-2",
+      "baku-water-1",
+      "baku-water-0"
+    ],
+    "south": [
+      "baku-south-5",
+      "baku-south-4",
+      "baku-south-3",
+      "baku-south-2",
+      "baku-south-1",
+      "baku-south-0"
+    ],
+    "north": [
+      "baku-north-5",
+      "baku-north-4",
+      "baku-north-3",
+      "baku-north-2",
+      "baku-north-1",
+      "baku-north-0"
+    ]
+  }
+}

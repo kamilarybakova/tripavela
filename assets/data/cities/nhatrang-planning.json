@@ -1,0 +1,993 @@
+{
+  "cityId": "nhatrang",
+  "zones": [
+    {
+      "id": "beach",
+      "name": "Лок Тхо / центральный пляж",
+      "lat": 12.2389,
+      "lon": 109.1965,
+      "image": "assets/images/nhatrang-beach-0.jpg"
+    },
+    {
+      "id": "north",
+      "name": "Сюонг Хуан / рынок Дам",
+      "lat": 12.2546,
+      "lon": 109.1909,
+      "image": "assets/images/nhatrang-north-0.jpg"
+    },
+    {
+      "id": "heritage",
+      "name": "Фыонг Шай / западный центр",
+      "lat": 12.2541,
+      "lon": 109.1803,
+      "image": "assets/images/nhatrang-heritage-0.jpg"
+    },
+    {
+      "id": "honchong",
+      "name": "Винь Фыок / Хончонг",
+      "lat": 12.2738,
+      "lon": 109.2033,
+      "image": "assets/images/nhatrang-honchong-0.jpg"
+    },
+    {
+      "id": "south",
+      "name": "Южный Лок Тхо",
+      "lat": 12.2271,
+      "lon": 109.1997,
+      "image": "assets/images/nhatrang-south-0.jpg"
+    }
+  ],
+  "pois": [
+    {
+      "id": "nhatrang-beach-0",
+      "zone": "beach",
+      "name": "Башня Лотоса: площадь",
+      "area": "Лок Тхо / центральный пляж",
+      "kind": "История",
+      "lat": 12.2389,
+      "lon": 109.1965,
+      "minutes": 30,
+      "open": 480,
+      "close": 1320,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Осмотр башни с площади у набережной. Это короткая остановка по пути вдоль моря.",
+      "address": "Башня Лотоса: площадь, Лок Тхо / центральный пляж, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-beach-0.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Nha Trang-Tran Phu.JPG",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-beach-1",
+      "zone": "beach",
+      "name": "Набережная Транфу: центр",
+      "area": "Лок Тхо / центральный пляж",
+      "kind": "Море",
+      "lat": 12.238,
+      "lon": 109.197,
+      "minutes": 30,
+      "open": 480,
+      "close": 1320,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Прогулка по дорожкам вдоль городского пляжа. Купание зависит от волн и флагов спасателей.",
+      "address": "Набережная Транфу: центр, Лок Тхо / центральный пляж, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-beach-1.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Nhatrang rue tran phu.jpg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-beach-2",
+      "zone": "beach",
+      "name": "Ночной рынок Нячанга",
+      "area": "Лок Тхо / центральный пляж",
+      "kind": "Шопинг",
+      "lat": 12.238,
+      "lon": 109.1955,
+      "minutes": 45,
+      "open": 1080,
+      "close": 1320,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Торговые ряды возле центра: сувениры, одежда и небольшие закуски. Планируйте ближе к вечеру.",
+      "address": "Ночной рынок Нячанга, Лок Тхо / центральный пляж, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-beach-2.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Bãi tắm Trần Phú trên bờ biển Nha Trang.jpeg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-beach-3",
+      "zone": "beach",
+      "name": "Площадь 2 Апреля",
+      "area": "Лок Тхо / центральный пляж",
+      "kind": "Прогулка",
+      "lat": 12.2377,
+      "lon": 109.1966,
+      "minutes": 30,
+      "open": 480,
+      "close": 1320,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Открытая площадь рядом с морем; днём здесь мало тени.",
+      "address": "Площадь 2 Апреля, Лок Тхо / центральный пляж, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-beach-3.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Nha Trang skyline.jpg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-beach-4",
+      "zone": "beach",
+      "name": "Кафе на Хунгвыонг",
+      "area": "Лок Тхо / центральный пляж",
+      "kind": "Еда",
+      "lat": 12.2365,
+      "lon": 109.1942,
+      "minutes": 45,
+      "open": 480,
+      "close": 1320,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Выберите кафе по меню на улице Hùng Vương, чуть в стороне от пляжа.",
+      "address": "Кафе на Хунгвыонг, Лок Тхо / центральный пляж, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-beach-4.jpg",
+      "imageCaption": "Иллюстрация города или района · не точный вид остановки",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-beach-5",
+      "zone": "beach",
+      "name": "Парк у центрального пляжа",
+      "area": "Лок Тхо / центральный пляж",
+      "kind": "Природа",
+      "lat": 12.235,
+      "lon": 109.1972,
+      "minutes": 30,
+      "open": 480,
+      "close": 1320,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Небольшой зелёный участок прибрежной прогулки, подходящий для отдыха.",
+      "address": "Парк у центрального пляжа, Лок Тхо / центральный пляж, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-beach-5.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Nha Trang, Tỉnh Khánh Hòa.jpg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-north-0",
+      "zone": "north",
+      "name": "Рынок Дам",
+      "area": "Сюонг Хуан / рынок Дам",
+      "kind": "Шопинг",
+      "lat": 12.2546,
+      "lon": 109.1909,
+      "minutes": 45,
+      "open": 480,
+      "close": 960,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Действующий городской рынок с продуктами, одеждой и сувенирами. Не все отделы работают весь день.",
+      "address": "Рынок Дам, Сюонг Хуан / рынок Дам, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-north-0.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: DAM MARKET AREA NHA TRANG VIETNAM JAN 2012 (7056886127).jpg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-north-1",
+      "zone": "north",
+      "name": "Nha Trang Center",
+      "area": "Сюонг Хуан / рынок Дам",
+      "kind": "Шопинг",
+      "lat": 12.2486,
+      "lon": 109.1965,
+      "minutes": 60,
+      "open": 600,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Торговый центр у набережной с магазинами и кафе; набор арендаторов меняется.",
+      "address": "Nha Trang Center, Сюонг Хуан / рынок Дам, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-north-1.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Nha Trang night market - panoramio.jpg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-north-2",
+      "zone": "north",
+      "name": "Парк Йерсена",
+      "area": "Сюонг Хуан / рынок Дам",
+      "kind": "Природа",
+      "lat": 12.2512,
+      "lon": 109.1966,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Открытая прогулочная часть севернее центра, рядом с музеем и морем.",
+      "address": "Парк Йерсена, Сюонг Хуан / рынок Дам, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-north-2.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Nha Trang Chợ Đầm market - panoramio.jpg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-north-3",
+      "zone": "north",
+      "name": "Музей Йерсена: фасад",
+      "area": "Сюонг Хуан / рынок Дам",
+      "kind": "История",
+      "lat": 12.252,
+      "lon": 109.1946,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Осмотр здания и знакомство с историей учёного снаружи. Экспозиция имеет отдельные часы и билет.",
+      "address": "Музей Йерсена: фасад, Сюонг Хуан / рынок Дам, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-north-3.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: NHA TRANG DAM MARKET AREA VIETNAM JAN 2012 (7056848361).jpg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-north-4",
+      "zone": "north",
+      "name": "Море у Сюонг Хуан",
+      "area": "Сюонг Хуан / рынок Дам",
+      "kind": "Море",
+      "lat": 12.253,
+      "lon": 109.1972,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Прибрежный участок севернее центрального пляжа; берег не везде одинаково удобен.",
+      "address": "Море у Сюонг Хуан, Сюонг Хуан / рынок Дам, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-north-4.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: NHA TRANG CHAO DAM MARKET VIETNAM JAN 2012 (7056995801).jpg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-north-5",
+      "zone": "north",
+      "name": "Обед у рынка Дам",
+      "area": "Сюонг Хуан / рынок Дам",
+      "kind": "Еда",
+      "lat": 12.2534,
+      "lon": 109.1907,
+      "minutes": 45,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Выберите открытое заведение на прилегающих улицах с понятными ценами.",
+      "address": "Обед у рынка Дам, Сюонг Хуан / рынок Дам, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-north-5.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Nha Trang Chợ Đầm market - panoramio (2).jpg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-heritage-0",
+      "zone": "heritage",
+      "name": "Пагода Лонгшон: нижний двор",
+      "area": "Фыонг Шай / западный центр",
+      "kind": "История",
+      "lat": 12.2541,
+      "lon": 109.1803,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Прогулка по нижней части действующей пагоды. Подъём к белому Будде требует лестниц и не обязателен.",
+      "address": "Пагода Лонгшон: нижний двор, Фыонг Шай / западный центр, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-heritage-0.jpg",
+      "imageCaption": "Иллюстрация города или района · не точный вид остановки",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-heritage-1",
+      "zone": "heritage",
+      "name": "Каменный собор: снаружи",
+      "area": "Фыонг Шай / западный центр",
+      "kind": "История",
+      "lat": 12.2487,
+      "lon": 109.188,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Осмотр собора со стороны доступной площадки. Внутренний вход зависит от служб и допуска.",
+      "address": "Каменный собор: снаружи, Фыонг Шай / западный центр, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-heritage-1.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Christ the King Cathedral Nha Trang.JPG",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-heritage-2",
+      "zone": "heritage",
+      "name": "Вокзал Нячанга: площадь",
+      "area": "Фыонг Шай / западный центр",
+      "kind": "История",
+      "lat": 12.2485,
+      "lon": 109.1847,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Короткая остановка у железнодорожного вокзала без захода на платформы.",
+      "address": "Вокзал Нячанга: площадь, Фыонг Шай / западный центр, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-heritage-2.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Ave Maria Square, Nha Trang.jpg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-heritage-3",
+      "zone": "heritage",
+      "name": "Рынок Соммой",
+      "area": "Фыонг Шай / западный центр",
+      "kind": "Шопинг",
+      "lat": 12.2454,
+      "lon": 109.1891,
+      "minutes": 45,
+      "open": 480,
+      "close": 960,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Районный рынок с продуктами; лучше приходить утром и смотреть работающие ряды.",
+      "address": "Рынок Соммой, Фыонг Шай / западный центр, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-heritage-3.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Nha Trang Cathedral.jpg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-heritage-4",
+      "zone": "heritage",
+      "name": "Улица Ле Тхань Фыонг",
+      "area": "Фыонг Шай / западный центр",
+      "kind": "Прогулка",
+      "lat": 12.2488,
+      "lon": 109.1859,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Пеший участок городских кварталов между вокзалом и центром. Трафик оживлённый.",
+      "address": "Улица Ле Тхань Фыонг, Фыонг Шай / западный центр, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-heritage-4.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Entrance of Nha Trang Cathedral.jpg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-heritage-5",
+      "zone": "heritage",
+      "name": "Вьетнамский завтрак в центре",
+      "area": "Фыонг Шай / западный центр",
+      "kind": "Еда",
+      "lat": 12.2468,
+      "lon": 109.1868,
+      "minutes": 45,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Остановитесь в открытом небольшом заведении с видимыми ценами на блюда.",
+      "address": "Вьетнамский завтрак в центре, Фыонг Шай / западный центр, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-heritage-5.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Nha Trang Cathedral, Inside Front.JPG",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-honchong-0",
+      "zone": "honchong",
+      "name": "Хончонг: береговая прогулка",
+      "area": "Винь Фыок / Хончонг",
+      "kind": "Море",
+      "lat": 12.2738,
+      "lon": 109.2033,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Прогулка по общедоступной береговой дороге. Вход на сам каменный мыс может быть платным и сюда не включён.",
+      "address": "Хончонг: береговая прогулка, Винь Фыок / Хончонг, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-honchong-0.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: 2001-06-03 Hon-Chong Nha-Trang.jpg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-honchong-1",
+      "zone": "honchong",
+      "name": "Улица Фам Ван Донг",
+      "area": "Винь Фыок / Хончонг",
+      "kind": "Прогулка",
+      "lat": 12.2771,
+      "lon": 109.2029,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Прибрежная улица северной части города: выбирайте небольшой участок в прохладное время.",
+      "address": "Улица Фам Ван Донг, Винь Фыок / Хончонг, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-honchong-1.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Hon Chong from Co Tien beach.JPG",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-honchong-2",
+      "zone": "honchong",
+      "name": "Пляж Байзыонг",
+      "area": "Винь Фыок / Хончонг",
+      "kind": "Море",
+      "lat": 12.2784,
+      "lon": 109.202,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Прогулка вдоль северного пляжа; купание возможно только при подходящих условиях.",
+      "address": "Пляж Байзыонг, Винь Фыок / Хончонг, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-honchong-2.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Hon Chong seen from the hill.JPG",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-honchong-3",
+      "zone": "honchong",
+      "name": "Кофе с видом на северную бухту",
+      "area": "Винь Фыок / Хончонг",
+      "kind": "Еда",
+      "lat": 12.2744,
+      "lon": 109.203,
+      "minutes": 45,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Кафе у прибрежной дороги: столик и конкретный вид не гарантируются.",
+      "address": "Кофе с видом на северную бухту, Винь Фыок / Хончонг, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-honchong-3.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Hon Chong rocks 2011.jpg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-honchong-4",
+      "zone": "honchong",
+      "name": "Районные магазины Виньфыок",
+      "area": "Винь Фыок / Хончонг",
+      "kind": "Шопинг",
+      "lat": 12.2768,
+      "lon": 109.2009,
+      "minutes": 45,
+      "open": 600,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Небольшие повседневные магазины в кварталах за пляжем вместо отдельной поездки в ТЦ.",
+      "address": "Районные магазины Виньфыок, Винь Фыок / Хончонг, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-honchong-4.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Núi Cô Tiên, Nha Trang, buôi sáng.jpg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-honchong-5",
+      "zone": "honchong",
+      "name": "Пауза на северной набережной",
+      "area": "Винь Фыок / Хончонг",
+      "kind": "Природа",
+      "lat": 12.2804,
+      "lon": 109.2012,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Короткая остановка на открытом прибрежном участке, без обещания оборудованной зоны отдыха.",
+      "address": "Пауза на северной набережной, Винь Фыок / Хончонг, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-honchong-5.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Hòn chồng Nha Trang năm 2016 (11).jpg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-south-0",
+      "zone": "south",
+      "name": "Парк Фудонг",
+      "area": "Южный Лок Тхо",
+      "kind": "Природа",
+      "lat": 12.2271,
+      "lon": 109.1997,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Общественная прогулочная зона у пляжа, подходящая для спокойного начала дня.",
+      "address": "Парк Фудонг, Южный Лок Тхо, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-south-0.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Nha Trang Beach 7.jpg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-south-1",
+      "zone": "south",
+      "name": "Южный участок Транфу",
+      "area": "Южный Лок Тхо",
+      "kind": "Море",
+      "lat": 12.2244,
+      "lon": 109.2002,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Прибрежная дорожка южнее центра. Не обязательно идти всю набережную целиком.",
+      "address": "Южный участок Транфу, Южный Лок Тхо, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-south-1.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Nha Trang Beach 10.jpg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-south-2",
+      "zone": "south",
+      "name": "Улица Нгуен Тхиен Тхуат",
+      "area": "Южный Лок Тхо",
+      "kind": "Шопинг",
+      "lat": 12.2331,
+      "lon": 109.1934,
+      "minutes": 45,
+      "open": 600,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Городская улица с магазинами, кафе и повседневными услугами.",
+      "address": "Улица Нгуен Тхиен Тхуат, Южный Лок Тхо, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-south-2.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Nha Trang Beach 5.jpg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-south-3",
+      "zone": "south",
+      "name": "Улица Туэтинь",
+      "area": "Южный Лок Тхо",
+      "kind": "Еда",
+      "lat": 12.2288,
+      "lon": 109.1954,
+      "minutes": 45,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Пауза в кафе на улице Tuệ Tĩnh рядом с пляжными кварталами.",
+      "address": "Улица Туэтинь, Южный Лок Тхо, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-south-3.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Nha Trang Beach 4.jpg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-south-4",
+      "zone": "south",
+      "name": "Улица Бьеттхы",
+      "area": "Южный Лок Тхо",
+      "kind": "Прогулка",
+      "lat": 12.2342,
+      "lon": 109.1935,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Короткий городской участок от ресторанных улиц в сторону пляжа.",
+      "address": "Улица Бьеттхы, Южный Лок Тхо, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-south-4.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Nha Trang Beach 2.jpg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "nhatrang-south-5",
+      "zone": "south",
+      "name": "Вечер у южного пляжа",
+      "area": "Южный Лок Тхо",
+      "kind": "Море",
+      "lat": 12.2302,
+      "lon": 109.1987,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Спокойная прогулка по прибрежной дорожке после жары; отдельные заведения на берегу платные.",
+      "address": "Вечер у южного пляжа, Южный Лок Тхо, Нячанг, Вьетнам",
+      "image": "assets/images/nhatrang-south-5.jpg",
+      "imageCaption": "Иллюстрация города Нячанг: Nha Trang Beach, Vietnam.jpg",
+      "sources": [
+        "https://vietnam.travel/node/1339",
+        "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+        "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    }
+  ],
+  "local": {
+    "beach": [
+      "nhatrang-beach-0",
+      "nhatrang-beach-1",
+      "nhatrang-beach-2",
+      "nhatrang-beach-3",
+      "nhatrang-beach-4",
+      "nhatrang-beach-5"
+    ],
+    "north": [
+      "nhatrang-north-0",
+      "nhatrang-north-1",
+      "nhatrang-north-2",
+      "nhatrang-north-3",
+      "nhatrang-north-4",
+      "nhatrang-north-5"
+    ],
+    "heritage": [
+      "nhatrang-heritage-0",
+      "nhatrang-heritage-1",
+      "nhatrang-heritage-2",
+      "nhatrang-heritage-3",
+      "nhatrang-heritage-4",
+      "nhatrang-heritage-5"
+    ],
+    "honchong": [
+      "nhatrang-honchong-0",
+      "nhatrang-honchong-1",
+      "nhatrang-honchong-2",
+      "nhatrang-honchong-3",
+      "nhatrang-honchong-4",
+      "nhatrang-honchong-5"
+    ],
+    "south": [
+      "nhatrang-south-0",
+      "nhatrang-south-1",
+      "nhatrang-south-2",
+      "nhatrang-south-3",
+      "nhatrang-south-4",
+      "nhatrang-south-5"
+    ]
+  },
+  "themes": [
+    {
+      "id": "classic",
+      "title": "Море, вечерний рынок и Транфу",
+      "tags": [
+        "История",
+        "Море",
+        "Шопинг",
+        "Прогулка",
+        "Еда",
+        "Природа"
+      ],
+      "pois": [
+        "nhatrang-beach-0",
+        "nhatrang-beach-1",
+        "nhatrang-beach-2",
+        "nhatrang-beach-3",
+        "nhatrang-beach-4",
+        "nhatrang-beach-5"
+      ]
+    },
+    {
+      "id": "art",
+      "title": "Северный центр и покупки",
+      "tags": [
+        "Шопинг",
+        "Природа",
+        "История",
+        "Море",
+        "Еда"
+      ],
+      "pois": [
+        "nhatrang-north-0",
+        "nhatrang-north-1",
+        "nhatrang-north-2",
+        "nhatrang-north-3",
+        "nhatrang-north-4",
+        "nhatrang-north-5"
+      ]
+    },
+    {
+      "id": "sea",
+      "title": "Пагода, собор и повседневный город",
+      "tags": [
+        "История",
+        "Шопинг",
+        "Прогулка",
+        "Еда"
+      ],
+      "pois": [
+        "nhatrang-heritage-0",
+        "nhatrang-heritage-1",
+        "nhatrang-heritage-2",
+        "nhatrang-heritage-3",
+        "nhatrang-heritage-4",
+        "nhatrang-heritage-5"
+      ]
+    },
+    {
+      "id": "food",
+      "title": "Северная бухта без спешки",
+      "tags": [
+        "Море",
+        "Прогулка",
+        "Еда",
+        "Шопинг",
+        "Природа"
+      ],
+      "pois": [
+        "nhatrang-honchong-0",
+        "nhatrang-honchong-1",
+        "nhatrang-honchong-2",
+        "nhatrang-honchong-3",
+        "nhatrang-honchong-4",
+        "nhatrang-honchong-5"
+      ]
+    },
+    {
+      "id": "local",
+      "title": "Южный пляж, парк и кафе",
+      "tags": [
+        "Природа",
+        "Море",
+        "Шопинг",
+        "Еда",
+        "Прогулка"
+      ],
+      "pois": [
+        "nhatrang-south-0",
+        "nhatrang-south-1",
+        "nhatrang-south-2",
+        "nhatrang-south-3",
+        "nhatrang-south-4",
+        "nhatrang-south-5"
+      ]
+    },
+    {
+      "id": "shopping",
+      "title": "Прогулка и время на покупки",
+      "tags": [
+        "Шопинг"
+      ],
+      "pois": [
+        "nhatrang-north-0",
+        "nhatrang-north-1",
+        "nhatrang-north-2",
+        "nhatrang-north-3",
+        "nhatrang-north-4",
+        "nhatrang-north-5"
+      ]
+    }
+  ],
+  "sources": [
+    "https://vietnam.travel/node/1339",
+    "https://dulichso.khanhhoa.gov.vn/en/article/hon-chong-promontory-a0a",
+    "https://nhatrang.khanhhoa.gov.vn/tin-bai/diem-den/cho-dem-nha-trang-an-gi-mua-gi-choi-gi-1621"
+  ],
+  "departure": {
+    "beach": [
+      "nhatrang-beach-5",
+      "nhatrang-beach-4",
+      "nhatrang-beach-3",
+      "nhatrang-beach-2",
+      "nhatrang-beach-1",
+      "nhatrang-beach-0"
+    ],
+    "north": [
+      "nhatrang-north-5",
+      "nhatrang-north-4",
+      "nhatrang-north-3",
+      "nhatrang-north-2",
+      "nhatrang-north-1",
+      "nhatrang-north-0"
+    ],
+    "heritage": [
+      "nhatrang-heritage-5",
+      "nhatrang-heritage-4",
+      "nhatrang-heritage-3",
+      "nhatrang-heritage-2",
+      "nhatrang-heritage-1",
+      "nhatrang-heritage-0"
+    ],
+    "honchong": [
+      "nhatrang-honchong-5",
+      "nhatrang-honchong-4",
+      "nhatrang-honchong-3",
+      "nhatrang-honchong-2",
+      "nhatrang-honchong-1",
+      "nhatrang-honchong-0"
+    ],
+    "south": [
+      "nhatrang-south-5",
+      "nhatrang-south-4",
+      "nhatrang-south-3",
+      "nhatrang-south-2",
+      "nhatrang-south-1",
+      "nhatrang-south-0"
+    ]
+  }
+}

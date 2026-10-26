@@ -1,0 +1,173 @@
+[
+  {
+    "asset": "city.jpg",
+    "page": "https://en.wikipedia.org/wiki/Istanbul",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Historical_peninsula_and_modern_skyline_of_Istanbul.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Historical_peninsula_and_modern_skyline_of_Istanbul.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "description": "Largest city in Turkey",
+    "credits": {
+      "Credit": "<a href=\"//commons.wikimedia.org/wiki/File:Fatihistanbul.jpg\" title=\"File:Fatihistanbul.jpg\">File:Fatihistanbul.jpg</a>",
+      "Artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Hunanuk&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Hunanuk (page does not exist)\">Hunanuk</a>",
+      "LicenseShortName": "CC0",
+      "LicenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "commons": "https://commons.wikimedia.org/wiki/File:Historical_peninsula_and_modern_skyline_of_Istanbul.jpg"
+  },
+  {
+    "asset": "kadikoy.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:2021_09_15_Moda_Iskelesi.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/ff/2021_09_15_Moda_Iskelesi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "commons": "https://commons.wikimedia.org/wiki/File:2021_09_15_Moda_Iskelesi.jpg",
+    "credits": {
+      "Credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+      "Artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:HalitBaris&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:HalitBaris (page does not exist)\">HalitBaris</a>",
+      "LicenseShortName": "CC BY-SA 4.0",
+      "LicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  {
+    "asset": "galata.jpg",
+    "page": "https://en.wikipedia.org/wiki/Karak%C3%B6y",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Istanbul_asv2020-02_img46_Galata_Bridge_and_Tower.jpg/3840px-Istanbul_asv2020-02_img46_Galata_Bridge_and_Tower.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "original": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Istanbul_asv2020-02_img46_Galata_Bridge_and_Tower.jpg/3840px-Istanbul_asv2020-02_img46_Galata_Bridge_and_Tower.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "description": "Quarter in Marmara, Turkey",
+    "credits": {
+      "Credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+      "Artist": "<b><span class=\"plainlinks\"><a class=\"external text\" href=\"https://commons.wikimedia.org/wiki/User:A.Savin\">A.Savin</a></span></b>",
+      "LicenseShortName": "FAL",
+      "LicenseUrl": "http://artlibre.org/licence/lal/en"
+    },
+    "commons": "https://commons.wikimedia.org/wiki/File:Istanbul_asv2020-02_img46_Galata_Bridge_and_Tower.jpg"
+  },
+  {
+    "asset": "balat.jpg",
+    "page": "https://en.wikipedia.org/wiki/Balat%2C_Fatih",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Balat_houses.jpg/3840px-Balat_houses.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "original": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Balat_houses.jpg/3840px-Balat_houses.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "description": "Neighbourhood in Fatih, Istanbul, Turkey",
+    "credits": {
+      "Credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+      "Artist": "<a href=\"//commons.wikimedia.org/wiki/User:Antoloji\" title=\"User:Antoloji\">Antoloji</a>",
+      "LicenseShortName": "CC BY-SA 4.0",
+      "LicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "commons": "https://commons.wikimedia.org/wiki/File:Balat_houses.jpg"
+  },
+  {
+    "asset": "kuzguncuk.jpg",
+    "page": "https://en.wikipedia.org/wiki/Kuzguncuk",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Selfie_time_in_Istanbul_streets_%2816428058798%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Selfie_time_in_Istanbul_streets_%2816428058798%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "description": "Neighbourhood in Üsküdar, Istanbul, Turkey",
+    "credits": {
+      "Credit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/pamas/16428058798/\">Selfie time in Istanbul streets</a>",
+      "Artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/126011817@N06\">Esin Üstün</a> from Istanbul, Turkey",
+      "LicenseShortName": "CC BY 2.0",
+      "LicenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "commons": "https://commons.wikimedia.org/wiki/File:Selfie_time_in_Istanbul_streets_%2816428058798%29.jpg"
+  },
+  {
+    "asset": "bosphorus.jpg",
+    "page": "https://en.wikipedia.org/wiki/Arnavutk%C3%B6y",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/98/Arnavutkoy.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/9/98/Arnavutkoy.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "credits": {
+      "Credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+      "Artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Metuboy&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Metuboy (page does not exist)\">Metuboy</a>",
+      "LicenseShortName": "CC BY-SA 4.0",
+      "LicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "commons": "https://commons.wikimedia.org/wiki/File:Arnavutkoy.jpg"
+  },
+  {
+    "asset": "uskudar.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Kuleli_Military_High_School_in_April_2024.jpg/3840px-Kuleli_Military_High_School_in_April_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "commons": "https://commons.wikimedia.org/wiki/File:Kuleli_Military_High_School_in_April_2024.jpg",
+    "credits": {
+      "Artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/flowcomm/\">flowcomm</a> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Kuleli_Military_High_School_in_April_2024.jpg#P170\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+      "LicenseShortName": "CC BY 2.0",
+      "LicenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+  },
+  {
+    "asset": "cukurcuma.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/%C3%87ukurcuma_Caddesi_with_Galata_tower.jpg/1920px-%C3%87ukurcuma_Caddesi_with_Galata_tower.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "commons": "https://commons.wikimedia.org/wiki/File:%C3%87ukurcuma_Caddesi_with_Galata_tower.jpg",
+    "credits": {
+      "Artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Jokesolid&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Jokesolid (page does not exist)\">Jokesolid</a>",
+      "LicenseShortName": "CC BY-SA 4.0",
+      "LicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  {
+    "asset": "cihangir.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Istanbul_%288425285534%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "commons": "https://commons.wikimedia.org/wiki/File:Istanbul_%288425285534%29.jpg",
+    "credits": {
+      "Artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/33217210@N02\">Grzegorz Jereczek</a> from Gdańsk, Poland",
+      "LicenseShortName": "CC BY-SA 2.0",
+      "LicenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    }
+  },
+  {
+    "asset": "besiktas.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Besiktas_Montage.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "commons": "https://commons.wikimedia.org/wiki/File:Besiktas_Montage.jpg",
+    "credits": {
+      "Artist": "Editchi",
+      "LicenseShortName": "CC BY-SA 4.0",
+      "LicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  {
+    "asset": "ortakoy.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Ortak%C3%B6y_Square_and_Mosque_Istanbul_Turkey.jpg/3840px-Ortak%C3%B6y_Square_and_Mosque_Istanbul_Turkey.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "commons": "https://commons.wikimedia.org/wiki/File:Ortak%C3%B6y_Square_and_Mosque_Istanbul_Turkey.jpg",
+    "credits": {
+      "Artist": "flowcomm",
+      "LicenseShortName": "CC BY 2.0",
+      "LicenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+  },
+  {
+    "asset": "gulhane.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f4/G%C3%BClhane_Park_in_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "commons": "https://commons.wikimedia.org/wiki/File%3AG%C3%BClhane_Park_in_2026.jpg",
+    "credits": {
+      "Artist": "<a href=\"//commons.wikimedia.org/wiki/User:Joseolgon\" title=\"User:Joseolgon\">Joseolgon</a>",
+      "LicenseShortName": "CC BY 4.0",
+      "LicenseUrl": "https://creativecommons.org/licenses/by/4.0"
+    }
+  },
+  {
+    "asset": "emirgan.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Emirgan_04325.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "commons": "https://commons.wikimedia.org/wiki/File%3AEmirgan_04325.jpg",
+    "credits": {
+      "Artist": "Nevit Dilmen",
+      "LicenseShortName": "CC BY-SA 3.0",
+      "LicenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  },
+  {
+    "asset": "caddebostan.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/By_The_Sea_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "commons": "https://commons.wikimedia.org/wiki/File%3ABy_The_Sea_-_panoramio.jpg",
+    "credits": {
+      "Artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161014223849/http://www.panoramio.com/user/2938773?with_photo_id=34412529\">M. PINARCI</a>",
+      "LicenseShortName": "CC BY-SA 3.0",
+      "LicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  {
+    "asset": "gazhane.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/M%C3%BCze_Gazhane_%2811%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "commons": "https://commons.wikimedia.org/wiki/File%3AM%C3%BCze_Gazhane_%2811%29.jpg",
+    "credits": {
+      "Artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Jelican9&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Jelican9 (page does not exist)\">Jelican9</a>",
+      "LicenseShortName": "CC BY-SA 4.0",
+      "LicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  }
+]

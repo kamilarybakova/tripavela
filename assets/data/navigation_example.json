@@ -1,0 +1,53 @@
+{
+  "destinationId": "p00",
+  "source": "https://routing.openstreetmap.de/",
+  "attribution": "Routing: FOSSGIS / OSRM; map data © OpenStreetMap contributors",
+  "note": "Synthetic start on a public street. Not user location. Foot profile.",
+  "route": {
+    "points": [
+      [
+        29.025292,
+        40.991273
+      ],
+      [
+        29.024912,
+        40.991336
+      ],
+      [
+        29.024907,
+        40.99132
+      ],
+      [
+        29.024886,
+        40.991259
+      ],
+      [
+        29.024713,
+        40.991196
+      ],
+      [
+        29.024461,
+        40.990842
+      ],
+      [
+        29.02473,
+        40.990725
+      ],
+      [
+        29.02477,
+        40.990615
+      ],
+      [
+        29.024604,
+        40.990394
+      ],
+      [
+        29.024582,
+        40.990365
+      ]
+    ],
+    "meters": 173.1,
+    "seconds": 142.4,
+    "createdAt": "2026-10-22T16:25:06.624476+00:00"
+  }
+}

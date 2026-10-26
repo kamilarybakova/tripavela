@@ -1,0 +1,992 @@
+{
+  "cityId": "tbilisi",
+  "zones": [
+    {
+      "id": "old",
+      "name": "Старый город / Авлабари",
+      "lat": 41.6899,
+      "lon": 44.8088,
+      "image": "assets/images/tbilisi-old-0.jpg"
+    },
+    {
+      "id": "center",
+      "name": "Руставели / Сололаки",
+      "lat": 41.6934,
+      "lon": 44.8016,
+      "image": "assets/images/tbilisi-center-0.jpg"
+    },
+    {
+      "id": "creative",
+      "name": "Чугурети / Марджанишвили",
+      "lat": 41.7096,
+      "lon": 44.8104,
+      "image": "assets/images/tbilisi-creative-0.jpg"
+    },
+    {
+      "id": "market",
+      "name": "Сухой мост / Дедаэна",
+      "lat": 41.7039,
+      "lon": 44.8027,
+      "image": "assets/images/tbilisi-market-0.jpg"
+    },
+    {
+      "id": "vake",
+      "name": "Вера / Ваке",
+      "lat": 41.7118,
+      "lon": 44.7511,
+      "image": "assets/images/tbilisi-vake-0.jpg"
+    }
+  ],
+  "pois": [
+    {
+      "id": "tbilisi-old-0",
+      "zone": "old",
+      "name": "Мейдан",
+      "area": "Старый город / Авлабари",
+      "kind": "История",
+      "lat": 41.6899,
+      "lon": 44.8088,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Площадь у старого города: отсюда удобно начинать прогулку по нижним улицам без подъёма к крепости.",
+      "address": "Мейдан, Старый город / Авлабари, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-old-0.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: Tbilisi, Old Tbilisi, Kura River 2, Georgia.jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-old-1",
+      "zone": "old",
+      "name": "Абанотубани",
+      "area": "Старый город / Авлабари",
+      "kind": "История",
+      "lat": 41.6881,
+      "lon": 44.811,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Осмотр кирпичных куполов серных бань снаружи. Сеанс в бане требует отдельной брони.",
+      "address": "Абанотубани, Старый город / Авлабари, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-old-1.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: Old Tbilisi collage by Gaeser.jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-old-2",
+      "zone": "old",
+      "name": "Шардени",
+      "area": "Старый город / Авлабари",
+      "kind": "Шопинг",
+      "lat": 41.6907,
+      "lon": 44.8084,
+      "minutes": 45,
+      "open": 600,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Небольшие галереи, сувениры и кафе в пешеходном квартале. У магазинов собственное расписание.",
+      "address": "Шардени, Старый город / Авлабари, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-old-2.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: Tbilisi, Old Tbilisi, Georgia.jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-old-3",
+      "zone": "old",
+      "name": "Мост Мира",
+      "area": "Старый город / Авлабари",
+      "kind": "Прогулка",
+      "lat": 41.693,
+      "lon": 44.8086,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Пешеходный переход через Куру с видом на оба берега.",
+      "address": "Мост Мира, Старый город / Авлабари, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-old-3.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: Old Tbilisi town in Tbilisi, Georgia.jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-old-4",
+      "zone": "old",
+      "name": "Парк Рике",
+      "area": "Старый город / Авлабари",
+      "kind": "Природа",
+      "lat": 41.6936,
+      "lon": 44.8106,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Зелёное пространство у реки; канатная дорога в визит не включена.",
+      "address": "Парк Рике, Старый город / Авлабари, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-old-4.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: Old Tbilisi town in Tbilisi, Georgia 02.jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-old-5",
+      "zone": "old",
+      "name": "Метехи: видовая площадка",
+      "area": "Старый город / Авлабари",
+      "kind": "История",
+      "lat": 41.69,
+      "lon": 44.8113,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Подъём на площадку у церкви; есть уклоны и ступени. При неудобном подъёме останьтесь на нижней набережной.",
+      "address": "Метехи: видовая площадка, Старый город / Авлабари, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-old-5.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: Tbilisi, Old Tbilisi from Narikala, Georgia.jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-center-0",
+      "zone": "center",
+      "name": "Площадь Свободы",
+      "area": "Руставели / Сололаки",
+      "kind": "История",
+      "lat": 41.6934,
+      "lon": 44.8016,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Начало прогулки по центру у Руставели и Сололаки; пользуйтесь подземными переходами.",
+      "address": "Площадь Свободы, Руставели / Сололаки, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-center-0.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: Shota Rustaveli Avenue, Tbilisi.jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-center-1",
+      "zone": "center",
+      "name": "Galleria Tbilisi",
+      "area": "Руставели / Сололаки",
+      "kind": "Шопинг",
+      "lat": 41.6945,
+      "lon": 44.8006,
+      "minutes": 60,
+      "open": 600,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Торговый центр у площади Свободы: одежда, кафе и удобная пауза в помещении.",
+      "address": "Galleria Tbilisi, Руставели / Сололаки, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-center-1.jpg",
+      "imageCaption": "Иллюстрация города или района · не точный вид остановки",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-center-2",
+      "zone": "center",
+      "name": "Улица Галактиона Табидзе",
+      "area": "Руставели / Сололаки",
+      "kind": "Еда",
+      "lat": 41.6915,
+      "lon": 44.8011,
+      "minutes": 45,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Улица кафе и ресторанов в Сололаки. Выберите заведение по меню, а не по обещанию лучшего места.",
+      "address": "Улица Галактиона Табидзе, Руставели / Сололаки, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-center-2.jpg",
+      "imageCaption": "Иллюстрация города или района · не точный вид остановки",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-center-3",
+      "zone": "center",
+      "name": "Проспект Руставели",
+      "area": "Руставели / Сололаки",
+      "kind": "Прогулка",
+      "lat": 41.6984,
+      "lon": 44.7975,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Городская прогулка вдоль фасадов театров и общественных зданий.",
+      "address": "Проспект Руставели, Руставели / Сололаки, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-center-3.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: Tbilisi, Rustaveli Metro Station (9713585515).jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-center-4",
+      "zone": "center",
+      "name": "Национальная галерея: фасад",
+      "area": "Руставели / Сололаки",
+      "kind": "Искусство",
+      "lat": 41.6992,
+      "lon": 44.7984,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Осмотр здания и прогулка рядом; посещение выставки требует отдельного билета.",
+      "address": "Национальная галерея: фасад, Руставели / Сололаки, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-center-4.jpg",
+      "imageCaption": "Иллюстрация города или района · не точный вид остановки",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-center-5",
+      "zone": "center",
+      "name": "Парк 9 Апреля",
+      "area": "Руставели / Сололаки",
+      "kind": "Природа",
+      "lat": 41.7,
+      "lon": 44.8,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Тенистые дорожки рядом с галереей; на спусках возможны ступени.",
+      "address": "Парк 9 Апреля, Руставели / Сололаки, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-center-5.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: Tbilisi, Rustaveli Avenue, Georgia.jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-creative-0",
+      "zone": "creative",
+      "name": "Fabrika: общественный двор",
+      "area": "Чугурети / Марджанишвили",
+      "kind": "Искусство",
+      "lat": 41.7096,
+      "lon": 44.8104,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Общедоступный двор бывшей фабрики с кафе и магазинами; частные зоны не входят в визит.",
+      "address": "Fabrika: общественный двор, Чугурети / Марджанишвили, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-creative-0.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: Fabrika Tbilisi, an urban culture hub in the capital of Georgia.jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-creative-1",
+      "zone": "creative",
+      "name": "Проспект Агмашенебели: пешеходный участок",
+      "area": "Чугурети / Марджанишвили",
+      "kind": "Прогулка",
+      "lat": 41.706,
+      "lon": 44.802,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Пешеходная часть исторического проспекта с кафе и фасадами.",
+      "address": "Проспект Агмашенебели: пешеходный участок, Чугурети / Марджанишвили, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-creative-1.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: Courtyard view of Fabrika Tbilisi.jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-creative-2",
+      "zone": "creative",
+      "name": "Площадь Марджанишвили",
+      "area": "Чугурети / Марджанишвили",
+      "kind": "История",
+      "lat": 41.7092,
+      "lon": 44.7986,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Узел района у метро и театра; удобное место для самостоятельного старта.",
+      "address": "Площадь Марджанишвили, Чугурети / Марджанишвили, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-creative-2.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: Tbilisi, Fabrika 2023-07-21 22-22-36.jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-creative-3",
+      "zone": "creative",
+      "name": "Магазины у Fabrika",
+      "area": "Чугурети / Марджанишвили",
+      "kind": "Шопинг",
+      "lat": 41.7098,
+      "lon": 44.81,
+      "minutes": 45,
+      "open": 600,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Маленькие магазины и студии во дворе: состав резидентов меняется.",
+      "address": "Магазины у Fabrika, Чугурети / Марджанишвили, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-creative-3.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: Tbilisi, Fabrika 2023-07-21 22-14-39.jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-creative-4",
+      "zone": "creative",
+      "name": "Парк Кахидзе",
+      "area": "Чугурети / Марджанишвили",
+      "kind": "Природа",
+      "lat": 41.7136,
+      "lon": 44.7986,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Небольшой зелёный парк в жилом районе, без обязательной программы.",
+      "address": "Парк Кахидзе, Чугурети / Марджанишвили, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-creative-4.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: Buskers performing in ' Fabrika Compound' in Tbilisi..jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-creative-5",
+      "zone": "creative",
+      "name": "Обед в Чугурети",
+      "area": "Чугурети / Марджанишвили",
+      "kind": "Еда",
+      "lat": 41.708,
+      "lon": 44.804,
+      "minutes": 45,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Выберите открытое кафе на прилегающих улицах с опубликованным меню.",
+      "address": "Обед в Чугурети, Чугурети / Марджанишвили, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-creative-5.jpg",
+      "imageCaption": "Иллюстрация города или района · не точный вид остановки",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-market-0",
+      "zone": "market",
+      "name": "Сухой мост: блошиный рынок",
+      "area": "Сухой мост / Дедаэна",
+      "kind": "Шопинг",
+      "lat": 41.7039,
+      "lon": 44.8027,
+      "minutes": 45,
+      "open": 600,
+      "close": 1020,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Неформальный рынок предметов быта, пластинок и антиквариата. В дождь и поздно вечером продавцов может не быть.",
+      "address": "Сухой мост: блошиный рынок, Сухой мост / Дедаэна, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-market-0.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: 2025-03-30 Dry Bridge Market, Tbilisi 5.jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-market-1",
+      "zone": "market",
+      "name": "Парк Дедаэна",
+      "area": "Сухой мост / Дедаэна",
+      "kind": "Природа",
+      "lat": 41.7044,
+      "lon": 44.8056,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Парк у Сухого моста и реки. Хорошее место для перерыва после рынка.",
+      "address": "Парк Дедаэна, Сухой мост / Дедаэна, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-market-1.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: 2025-03-30 Dry Bridge Market, Tbilisi 1.jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-market-2",
+      "zone": "market",
+      "name": "Художественные ряды у Сухого моста",
+      "area": "Сухой мост / Дедаэна",
+      "kind": "Искусство",
+      "lat": 41.7034,
+      "lon": 44.802,
+      "minutes": 30,
+      "open": 600,
+      "close": 1020,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Уличные работы художников рядом с рынком; присутствие авторов зависит от погоды.",
+      "address": "Художественные ряды у Сухого моста, Сухой мост / Дедаэна, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-market-2.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: 2025-04-19 Dry Bridge Market, Tbilisi 1.jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-market-3",
+      "zone": "market",
+      "name": "Парк 9 Марта",
+      "area": "Сухой мост / Дедаэна",
+      "kind": "Природа",
+      "lat": 41.7045,
+      "lon": 44.8005,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Зелёная часть прогулки рядом с рынком и мостом.",
+      "address": "Парк 9 Марта, Сухой мост / Дедаэна, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-market-3.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: 2025-03-30 Dry Bridge Market, Tbilisi 2.jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-market-4",
+      "zone": "market",
+      "name": "Улица Атонели",
+      "area": "Сухой мост / Дедаэна",
+      "kind": "Прогулка",
+      "lat": 41.7008,
+      "lon": 44.803,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Тихий городской участок между парком и центральными улицами.",
+      "address": "Улица Атонели, Сухой мост / Дедаэна, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-market-4.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: 2025-04-19 Dry Bridge Market, Tbilisi 3.jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-market-5",
+      "zone": "market",
+      "name": "Кофе у Орбелиани",
+      "area": "Сухой мост / Дедаэна",
+      "kind": "Еда",
+      "lat": 41.6995,
+      "lon": 44.8033,
+      "minutes": 45,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Пауза на площади и прилегающих улицах. Напиток и десерт заказываются отдельно.",
+      "address": "Кофе у Орбелиани, Сухой мост / Дедаэна, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-market-5.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: 2025-03-30 Dry Bridge Market, Tbilisi 4.jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-vake-0",
+      "zone": "vake",
+      "name": "Парк Ваке",
+      "area": "Вера / Ваке",
+      "kind": "Природа",
+      "lat": 41.7118,
+      "lon": 44.7511,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Прогулка по нижним дорожкам парка без обязательного подъёма к Черепашьему озеру.",
+      "address": "Парк Ваке, Вера / Ваке, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-vake-0.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: Vake neighborhood of Tbilisi, Georgia as seen from a nearby hill.jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-vake-1",
+      "zone": "vake",
+      "name": "Проспект Чавчавадзе",
+      "area": "Вера / Ваке",
+      "kind": "Шопинг",
+      "lat": 41.7097,
+      "lon": 44.7638,
+      "minutes": 45,
+      "open": 600,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Городской проспект с магазинами и кафе. Это протяжённая улица: выберите небольшой участок.",
+      "address": "Проспект Чавчавадзе, Вера / Ваке, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-vake-1.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: Statue of a tiger at the entrance of the Vake Park. Tbilisi, Georgia.jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-vake-2",
+      "zone": "vake",
+      "name": "Парк Мзиури",
+      "area": "Вера / Ваке",
+      "kind": "Природа",
+      "lat": 41.7114,
+      "lon": 44.7688,
+      "minutes": 30,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Парк в долине: дорожки имеют уклоны, местами есть лестницы.",
+      "address": "Парк Мзиури, Вера / Ваке, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-vake-2.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: Vake Park in Tbilisi, 2022.jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-vake-3",
+      "zone": "vake",
+      "name": "Улица Абашидзе",
+      "area": "Вера / Ваке",
+      "kind": "Еда",
+      "lat": 41.7077,
+      "lon": 44.7586,
+      "minutes": 45,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Жилой квартал с кафе и ресторанами; конкретное заведение выбирайте по меню.",
+      "address": "Улица Абашидзе, Вера / Ваке, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-vake-3.jpg",
+      "imageCaption": "Иллюстрация города или района · не точный вид остановки",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-vake-4",
+      "zone": "vake",
+      "name": "Магазины на Палиашвили",
+      "area": "Вера / Ваке",
+      "kind": "Шопинг",
+      "lat": 41.709,
+      "lon": 44.7597,
+      "minutes": 45,
+      "open": 600,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Витрины и небольшие магазины в квартале Ваке; режим работы у каждого свой.",
+      "address": "Магазины на Палиашвили, Вера / Ваке, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-vake-4.jpg",
+      "imageCaption": "Иллюстрация города Тбилиси: Vake District, Tbilisi, Georgia.jpg",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    },
+    {
+      "id": "tbilisi-vake-5",
+      "zone": "vake",
+      "name": "Кофейная пауза в Ваке",
+      "area": "Вера / Ваке",
+      "kind": "Еда",
+      "lat": 41.7088,
+      "lon": 44.755,
+      "minutes": 45,
+      "open": 480,
+      "close": 1200,
+      "paid": false,
+      "closedWeekdays": [],
+      "description": "Спокойный перерыв между прогулкой в парке и магазинами.",
+      "address": "Кофейная пауза в Ваке, Вера / Ваке, Тбилиси, Грузия",
+      "image": "assets/images/tbilisi-vake-5.jpg",
+      "imageCaption": "Иллюстрация города или района · не точный вид остановки",
+      "sources": [
+        "https://georgia.travel/tbilisi",
+        "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+        "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+      ],
+      "hoursNote": "Редакционное окно для прогулки, не подтверждённые часы заведения. Проверьте перед визитом.",
+      "coordinateAccuracy": "Ориентир района / общественного подхода; точный вход уточните в картах"
+    }
+  ],
+  "local": {
+    "old": [
+      "tbilisi-old-0",
+      "tbilisi-old-1",
+      "tbilisi-old-2",
+      "tbilisi-old-3",
+      "tbilisi-old-4",
+      "tbilisi-old-5"
+    ],
+    "center": [
+      "tbilisi-center-0",
+      "tbilisi-center-1",
+      "tbilisi-center-2",
+      "tbilisi-center-3",
+      "tbilisi-center-4",
+      "tbilisi-center-5"
+    ],
+    "creative": [
+      "tbilisi-creative-0",
+      "tbilisi-creative-1",
+      "tbilisi-creative-2",
+      "tbilisi-creative-3",
+      "tbilisi-creative-4",
+      "tbilisi-creative-5"
+    ],
+    "market": [
+      "tbilisi-market-0",
+      "tbilisi-market-1",
+      "tbilisi-market-2",
+      "tbilisi-market-3",
+      "tbilisi-market-4",
+      "tbilisi-market-5"
+    ],
+    "vake": [
+      "tbilisi-vake-0",
+      "tbilisi-vake-1",
+      "tbilisi-vake-2",
+      "tbilisi-vake-3",
+      "tbilisi-vake-4",
+      "tbilisi-vake-5"
+    ]
+  },
+  "themes": [
+    {
+      "id": "classic",
+      "title": "Старый Тбилиси и берега Куры",
+      "tags": [
+        "История",
+        "Шопинг",
+        "Прогулка",
+        "Природа"
+      ],
+      "pois": [
+        "tbilisi-old-0",
+        "tbilisi-old-1",
+        "tbilisi-old-2",
+        "tbilisi-old-3",
+        "tbilisi-old-4",
+        "tbilisi-old-5"
+      ]
+    },
+    {
+      "id": "art",
+      "title": "Фасады, искусство и магазины",
+      "tags": [
+        "История",
+        "Шопинг",
+        "Еда",
+        "Прогулка",
+        "Искусство",
+        "Природа"
+      ],
+      "pois": [
+        "tbilisi-center-0",
+        "tbilisi-center-1",
+        "tbilisi-center-2",
+        "tbilisi-center-3",
+        "tbilisi-center-4",
+        "tbilisi-center-5"
+      ]
+    },
+    {
+      "id": "sea",
+      "title": "Дворы, дизайн и вкусы",
+      "tags": [
+        "Искусство",
+        "Прогулка",
+        "История",
+        "Шопинг",
+        "Природа",
+        "Еда"
+      ],
+      "pois": [
+        "tbilisi-creative-0",
+        "tbilisi-creative-1",
+        "tbilisi-creative-2",
+        "tbilisi-creative-3",
+        "tbilisi-creative-4",
+        "tbilisi-creative-5"
+      ]
+    },
+    {
+      "id": "food",
+      "title": "Винтаж, парк и искусство",
+      "tags": [
+        "Шопинг",
+        "Природа",
+        "Искусство",
+        "Прогулка",
+        "Еда"
+      ],
+      "pois": [
+        "tbilisi-market-0",
+        "tbilisi-market-1",
+        "tbilisi-market-2",
+        "tbilisi-market-3",
+        "tbilisi-market-4",
+        "tbilisi-market-5"
+      ]
+    },
+    {
+      "id": "local",
+      "title": "Зелёный Тбилиси и покупки",
+      "tags": [
+        "Природа",
+        "Шопинг",
+        "Еда"
+      ],
+      "pois": [
+        "tbilisi-vake-0",
+        "tbilisi-vake-1",
+        "tbilisi-vake-2",
+        "tbilisi-vake-3",
+        "tbilisi-vake-4",
+        "tbilisi-vake-5"
+      ]
+    },
+    {
+      "id": "shopping",
+      "title": "Прогулка и время на покупки",
+      "tags": [
+        "Шопинг"
+      ],
+      "pois": [
+        "tbilisi-vake-0",
+        "tbilisi-vake-1",
+        "tbilisi-vake-2",
+        "tbilisi-vake-3",
+        "tbilisi-vake-4",
+        "tbilisi-vake-5"
+      ]
+    }
+  ],
+  "sources": [
+    "https://georgia.travel/tbilisi",
+    "https://georgia.travel/where-to-purchase-georgian-souvenirs-in-tbilisi",
+    "https://georgia.travel/flea-markets/dry-bridge-flea-market"
+  ],
+  "departure": {
+    "old": [
+      "tbilisi-old-5",
+      "tbilisi-old-4",
+      "tbilisi-old-3",
+      "tbilisi-old-2",
+      "tbilisi-old-1",
+      "tbilisi-old-0"
+    ],
+    "center": [
+      "tbilisi-center-5",
+      "tbilisi-center-4",
+      "tbilisi-center-3",
+      "tbilisi-center-2",
+      "tbilisi-center-1",
+      "tbilisi-center-0"
+    ],
+    "creative": [
+      "tbilisi-creative-5",
+      "tbilisi-creative-4",
+      "tbilisi-creative-3",
+      "tbilisi-creative-2",
+      "tbilisi-creative-1",
+      "tbilisi-creative-0"
+    ],
+    "market": [
+      "tbilisi-market-5",
+      "tbilisi-market-4",
+      "tbilisi-market-3",
+      "tbilisi-market-2",
+      "tbilisi-market-1",
+      "tbilisi-market-0"
+    ],
+    "vake": [
+      "tbilisi-vake-5",
+      "tbilisi-vake-4",
+      "tbilisi-vake-3",
+      "tbilisi-vake-2",
+      "tbilisi-vake-1",
+      "tbilisi-vake-0"
+    ]
+  }
+}
