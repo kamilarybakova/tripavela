@@ -598,7 +598,7 @@ class TripPlanScreen extends ConsumerWidget {
             height: 210,
           ),
           const SizedBox(height: 16),
-          Tag('Демо-план · ${store.cityFor(b.cityId)['name']}'),
+          Tag('План поездки · ${store.cityFor(b.cityId)['name']}'),
           _heading(
             context,
             '${store.cityFor(b.cityId)['name']} на ${_days(b.days)}',

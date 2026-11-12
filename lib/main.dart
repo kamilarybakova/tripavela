@@ -1,18 +1,24 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'core/theme.dart';
+import 'data/remote_places.dart';
 import 'data/store.dart';
 import 'l10n/app_localizations.dart';
 import 'l10n/copy.dart';
+import 'ui/remote_places_screen.dart';
 import 'ui/screens.dart';
 import 'navigation/route_observer.dart';
 import 'planning/planning_screens.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  // iOS uses Info.plist: portrait on iPhone, all orientations on iPad.
+  if (defaultTargetPlatform != TargetPlatform.iOS) {
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  }
   runApp(const ProviderScope(child: TravelApp()));
 }
 
@@ -33,13 +39,18 @@ class _TravelAppState extends ConsumerState<TravelApp> {
       initialLocation: '/s01',
       refreshListenable: store,
       redirect: (context, state) {
-        if (!store.ready && state.uri.path != '/s01') return '/s01';
-        if (state.uri.path == '/s01' && store.ready) {
-          return !store.state['onboarded']
-              ? '/s02'
-              : !store.state['city']
-              ? '/s03'
-              : '/home';
+        final path = state.uri.path;
+        if (!store.ready) return path == '/s01' ? null : '/s01';
+        final extra = state.uri.queryParameters['extra'];
+        final next = store.state['onboarded'] != true
+            ? '/s02'
+            : store.state['city'] != true
+            ? '/s03'
+            : '/home';
+        if (path == '/s01' ||
+            (path == '/s02' && extra != 'repeat') ||
+            (path == '/s03' && extra != 'change')) {
+          return path == next ? null : next;
         }
         return null;
       },
@@ -60,6 +71,11 @@ class _TravelAppState extends ConsumerState<TravelApp> {
                 ],
               ),
           ],
+        ),
+        GoRoute(
+          path: '/places',
+          builder: (context, state) =>
+              RemotePlacesScreen(catalog: RemotePlaces(store.db!)),
         ),
         GoRoute(
           path: '/trips',

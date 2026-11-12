@@ -27,7 +27,6 @@ Map<String, dynamic> initialState() => {
   'draft': defaultFilters(),
   'preferences': defaultFilters(),
   'settings': {'theme': 'system', 'haptics': true, 'reduceMotion': false},
-  'demo': <String, dynamic>{},
   'name': copy.message484,
   'events': <dynamic>[],
 };
@@ -107,7 +106,6 @@ class TravelStore extends ChangeNotifier
   @override
   Map<String, dynamic> get settings =>
       Map<String, dynamic>.from(state['settings']);
-  Map<String, dynamic> get demo => Map<String, dynamic>.from(state['demo']);
   @override
   List<Map<String, dynamic>> get sessions =>
       List<Map<String, dynamic>>.from(state['sessions']);
@@ -253,16 +251,12 @@ class TravelStore extends ChangeNotifier
 
   Future<void> change(
     void Function(Map<String, dynamic>) action, {
-    bool allowError = false,
     String? event,
   }) async {
     if (busy) throw StateError(copy.errorBusy);
     busy = true;
     notifyListeners();
     try {
-      if (demo['saveError'] == true && !allowError) {
-        throw StateError(copy.errorSaving);
-      }
       final next = copyMap(state);
       action(next);
       if (event != null) {
@@ -406,8 +400,7 @@ class TravelStore extends ChangeNotifier
   }, event: 'branch_chosen');
   Future<void> replace(String id, String place, String reason) =>
       mutateTrip(id, (t, s) {
-        if (place != t['snapshot']['alternative'] ||
-            demo['noAlternatives'] == true) {
+        if (place != t['snapshot']['alternative']) {
           throw StateError(copy.noReplacement);
         }
         final stop = t['stops'][t['index']];
@@ -489,7 +482,7 @@ class TravelStore extends ChangeNotifier
 
   @override
   Future<void> setting(String key, dynamic value) async {
-    await change((s) => s['settings'][key] = value, allowError: true);
+    await change((s) => s['settings'][key] = value);
     if (key == 'theme') {
       final prefs = await SharedPreferences.getInstance();
       await prefs.setString('theme', value);
@@ -518,7 +511,7 @@ class TravelStore extends ChangeNotifier
           if (!activeIds.contains(v['trip'])) v['trip'] = null;
         }
       }
-    }, allowError: true);
+    });
     if (type == 'all') {
       final prefs = await SharedPreferences.getInstance();
       await prefs.remove('theme');

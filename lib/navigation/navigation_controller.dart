@@ -8,7 +8,6 @@ class WalkNavigationController extends ChangeNotifier {
   final NavigationLocationSource location;
   final FootRoutingService routing;
   final NavigationCache cache;
-  final NavigationExamples examples;
   String destinationId;
   LatLng destination;
   NavigationFix? fix;
@@ -20,15 +19,13 @@ class WalkNavigationController extends ChangeNotifier {
   bool locating = false,
       routingNow = false,
       tracking = false,
-      isDemo = false,
       cached = false,
-      onlineApproved = false,
-      demoPlaying = false;
+      onlineApproved = false;
   bool _disposed = false, _available = true, _trackingWanted = false;
   int _routeEpoch = 0, _gpsEpoch = 0;
   DateTime? _lastRouteRequest;
   StreamSubscription<NavigationFix>? _subscription;
-  Timer? _initialFixTimer, _freshnessTimer, _demoTimer;
+  Timer? _initialFixTimer, _freshnessTimer;
 
   WalkNavigationController({
     required this.destinationId,
@@ -36,7 +33,6 @@ class WalkNavigationController extends ChangeNotifier {
     required this.location,
     required this.routing,
     required this.cache,
-    required this.examples,
   });
   void _notify() {
     if (!_disposed) notifyListeners();
@@ -44,7 +40,6 @@ class WalkNavigationController extends ChangeNotifier {
 
   bool get stale =>
       fix != null &&
-      !isDemo &&
       DateTime.now().difference(fix!.timestamp) > const Duration(seconds: 45);
   double? get remainingMeters =>
       path != null &&
@@ -74,7 +69,7 @@ class WalkNavigationController extends ChangeNotifier {
     } catch (_) {
       return;
     }
-    if (_disposed || epoch != _routeEpoch || path != null || isDemo) return;
+    if (_disposed || epoch != _routeEpoch || path != null) return;
     if (saved != null) {
       path = saved;
       cached = true;
@@ -85,10 +80,8 @@ class WalkNavigationController extends ChangeNotifier {
 
   void changeDestination(String id, LatLng point) {
     if (id == destinationId && point == destination) return;
-    final wasDemo = isDemo;
     _routeEpoch++;
     _lastRouteRequest = null;
-    _stopDemoAnimation();
     destinationId = id;
     destination = point;
     path = null;
@@ -97,20 +90,14 @@ class WalkNavigationController extends ChangeNotifier {
     routingNow = false;
     routeIssue = null;
     _notify();
-    if (wasDemo) {
-      unawaited(showDemo());
-    } else {
-      unawaited(restore());
-      if (onlineApproved && fix != null && _available) unawaited(buildRoute());
-    }
+    unawaited(restore());
+    if (onlineApproved && fix != null && _available) unawaited(buildRoute());
   }
 
   Future<void> startLocation({bool requestPermission = true}) async {
     _trackingWanted = true;
     if (!_available || _disposed) return;
     final epoch = ++_gpsEpoch;
-    _stopDemoAnimation();
-    isDemo = false;
     path = null;
     progress = null;
     cached = false;
@@ -195,8 +182,7 @@ class WalkNavigationController extends ChangeNotifier {
     }
     progress = path == null ? null : progressOnRoute(value.point, path!);
     _notify();
-    if (!isDemo &&
-        onlineApproved &&
+    if (onlineApproved &&
         _available &&
         (path == null || (progress?.offRouteMeters ?? 0) > 50)) {
       unawaited(buildRoute());
@@ -209,7 +195,7 @@ class WalkNavigationController extends ChangeNotifier {
   }
 
   Future<void> buildRoute({bool force = false}) async {
-    if (_disposed || !_available || isDemo || !onlineApproved || routingNow) {
+    if (_disposed || !_available || !onlineApproved || routingNow) {
       return;
     }
     final current = fix;
@@ -247,7 +233,7 @@ class WalkNavigationController extends ChangeNotifier {
     _notify();
     try {
       final result = await routing.route(current.point, target);
-      if (_disposed || epoch != _routeEpoch || !_available || isDemo) return;
+      if (_disposed || epoch != _routeEpoch || !_available) return;
       path = result;
       cached = false;
       progress = progressOnRoute(fix!.point, result);
@@ -267,117 +253,6 @@ class WalkNavigationController extends ChangeNotifier {
     }
   }
 
-  Future<void> showDemo() async {
-    if (_disposed || !_available || routingNow) return;
-    final previousDemoOrigin = isDemo ? fix?.point : null;
-    _trackingWanted = false;
-    _suspendLocation();
-    _stopDemoAnimation();
-    final epoch = ++_routeEpoch;
-    isDemo = true;
-    fix = null;
-    path = null;
-    progress = null;
-    trail.clear();
-    cached = false;
-    locationIssue = null;
-    routeIssue = null;
-    routingNow = true;
-    _notify();
-    try {
-      var result = await examples.load(destinationId);
-      if (_disposed || epoch != _routeEpoch || !_available) return;
-      if (result == null) {
-        final origin =
-            previousDemoOrigin != null &&
-                metersBetween(previousDemoOrigin, destination) > 25 &&
-                metersBetween(previousDemoOrigin, destination) < 10000
-            ? previousDemoOrigin
-            : LatLng(
-                destination.latitude + .0009,
-                destination.longitude + .0005,
-              );
-        result = await routing.route(origin, destination);
-      }
-      if (_disposed || epoch != _routeEpoch || !_available) return;
-      path = result;
-      _onFix(
-        NavigationFix(
-          result.points.first,
-          accuracy: 6,
-          timestamp: DateTime.now(),
-        ),
-      );
-    } catch (error) {
-      if (_disposed || epoch != _routeEpoch) return;
-      routeIssue = error is RoutingFailure ? error.issue : RouteIssue.network;
-    } finally {
-      if (!_disposed && epoch == _routeEpoch) {
-        routingNow = false;
-        _notify();
-      }
-    }
-  }
-
-  void toggleDemoWalk() {
-    if (!isDemo || path == null || !_available) return;
-    if (demoPlaying) {
-      _stopDemoAnimation();
-      _notify();
-      return;
-    }
-    demoPlaying = true;
-    var walked = path!.points.length > 1 ? _distanceFromStart() : 0.0;
-    if (remainingMeters != null && remainingMeters! < 3) {
-      walked = 0;
-      trail.clear();
-    }
-    _demoTimer = Timer.periodic(const Duration(seconds: 1), (_) {
-      final route = path;
-      if (route == null || !_available) {
-        _stopDemoAnimation();
-        return;
-      }
-      walked += 8;
-      var accumulated = 0.0;
-      var point = route.points.last;
-      for (var i = 1; i < route.points.length; i++) {
-        final length = metersBetween(route.points[i - 1], route.points[i]);
-        if (accumulated + length >= walked && length > 0) {
-          final t = (walked - accumulated) / length;
-          final a = route.points[i - 1], b = route.points[i];
-          point = LatLng(
-            a.latitude + (b.latitude - a.latitude) * t,
-            a.longitude + (b.longitude - a.longitude) * t,
-          );
-          break;
-        }
-        accumulated += length;
-      }
-      _onFix(NavigationFix(point, accuracy: 6, timestamp: DateTime.now()));
-      if (metersBetween(point, route.points.last) < 2) {
-        _stopDemoAnimation();
-        _notify();
-      }
-    });
-    _notify();
-  }
-
-  double _distanceFromStart() {
-    if (path == null || progress == null) return 0;
-    var total = 0.0;
-    for (var i = 1; i < path!.points.length; i++) {
-      total += metersBetween(path!.points[i - 1], path!.points[i]);
-    }
-    return total - progress!.remainingMeters;
-  }
-
-  void _stopDemoAnimation() {
-    _demoTimer?.cancel();
-    _demoTimer = null;
-    demoPlaying = false;
-  }
-
   void _suspendLocation() {
     _gpsEpoch++;
     unawaited(_subscription?.cancel());
@@ -395,7 +270,6 @@ class WalkNavigationController extends ChangeNotifier {
       _routeEpoch++;
       routingNow = false;
       _suspendLocation();
-      _stopDemoAnimation();
     } else if (_trackingWanted) {
       unawaited(startLocation(requestPermission: false));
     }
@@ -407,7 +281,6 @@ class WalkNavigationController extends ChangeNotifier {
     _routeEpoch++;
     routingNow = false;
     _suspendLocation();
-    _stopDemoAnimation();
     fix = null;
     progress = null;
     cached = path != null;
@@ -421,7 +294,6 @@ class WalkNavigationController extends ChangeNotifier {
     _disposed = true;
     _routeEpoch++;
     _suspendLocation();
-    _stopDemoAnimation();
     routing.close();
     super.dispose();
   }

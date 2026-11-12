@@ -101,7 +101,7 @@ void main() {
   });
 
   test(
-    'One-hour calm free walk has an exact outdoor match; late demo has a proposal',
+    'One-hour calm free walk has an exact outdoor match; late start has a proposal',
     () {
       final f = defaultFilters()
         ..addAll({

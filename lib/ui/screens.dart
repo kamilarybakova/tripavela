@@ -22,7 +22,6 @@ String dateLabel(String value) => DateFormat(
   'ru',
 ).format(DateTime.parse(value).toUtc().add(Duration(hours: 3)));
 String money(int amount) => '${(amount / 100).round()} ₺';
-final demoLabel = copy.message000;
 final moods = [
   copy.message001,
   copy.message002,
@@ -451,7 +450,6 @@ class _TravelScreenState extends ConsumerState<TravelScreen> {
       's28' => about(),
       'note' => notePage(),
       'gallery' => gallery(),
-      'demo' => demoPage(),
       _ => PageFrame(
         title: copy.message035,
         child: button(copy.message036, () => context.go('/home')),
@@ -504,7 +502,7 @@ class _TravelScreenState extends ConsumerState<TravelScreen> {
           Align(
             alignment: Alignment.centerRight,
             child: TextButton(
-              onPressed: finishOnboarding,
+              onPressed: saving || store.busy ? null : finishOnboarding,
               child: Text(copy.message046),
             ),
           ),
@@ -580,19 +578,20 @@ class _TravelScreenState extends ConsumerState<TravelScreen> {
   }
 
   Future<void> finishOnboarding() async {
-    if (await act(
-          () => store.change(
-            (s) => s['onboarded'] = true,
-            event: 'onboarding_completed',
-          ),
-        ) &&
-        mounted) {
-      if (widget.extra == 'repeat') {
+    if (widget.extra == 'repeat') {
+      if (context.canPop()) {
         context.pop();
       } else {
-        context.go('/s03');
+        context.go('/home');
       }
+      return;
     }
+    await act(
+      () => store.change(
+        (s) => s['onboarded'] = true,
+        event: 'onboarding_completed',
+      ),
+    );
   }
 
   Widget city() {
@@ -626,11 +625,15 @@ class _TravelScreenState extends ConsumerState<TravelScreen> {
               padding: const EdgeInsets.only(bottom: 18),
               child: InkWell(
                 borderRadius: BorderRadius.circular(20),
-                onTap: () async {
-                  if (await act(() => store.selectCity(c['id'])) && mounted) {
-                    context.go('/home');
-                  }
-                },
+                onTap: saving || store.busy
+                    ? null
+                    : () async {
+                        if (await act(() => store.selectCity(c['id'])) &&
+                            mounted &&
+                            widget.extra == 'change') {
+                          context.go('/home');
+                        }
+                      },
                 child: Panel(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -674,7 +677,7 @@ class _TravelScreenState extends ConsumerState<TravelScreen> {
             children: [
               Expanded(
                 child: InkWell(
-                  onTap: () => open('s03'),
+                  onTap: () => open('s03', extra: 'change'),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -891,7 +894,7 @@ class _TravelScreenState extends ConsumerState<TravelScreen> {
           InfoLine(Icons.explore_outlined, copy.message085),
           InfoLine(Icons.auto_stories_outlined, copy.message086),
           SizedBox(height: 24),
-          Text(demoLabel, style: TextStyle(fontSize: 12)),
+          Text(copy.message000, style: TextStyle(fontSize: 12)),
         ],
       ),
     );
@@ -1206,17 +1209,9 @@ class _TravelScreenState extends ConsumerState<TravelScreen> {
   }
 
   Widget results() {
-    final matches = matchRoutes(
-      store.routes,
-      store.draft,
-      late: store.demo['late'] == true,
-    );
+    final matches = matchRoutes(store.routes, store.draft);
     final suggestions = matches.isEmpty
-        ? suggestRoutes(
-            store.routes,
-            store.draft,
-            late: store.demo['late'] == true,
-          )
+        ? suggestRoutes(store.routes, store.draft)
         : <RouteSuggestion>[];
     return PageFrame(
       title: copy.message146,
@@ -1330,7 +1325,6 @@ class _TravelScreenState extends ConsumerState<TravelScreen> {
       if (await act(
             () => store.change((s) {
               s['draft'] = suggestion.filters;
-              s['demo']['late'] = false;
             }),
           ) &&
           mounted) {
@@ -1341,7 +1335,7 @@ class _TravelScreenState extends ConsumerState<TravelScreen> {
   ]);
 
   String emptyReason() {
-    if (store.demo['late'] == true || (store.draft['startHour'] as int) > 18) {
+    if ((store.draft['startHour'] as int) > 18) {
       return copy.message155;
     }
     if (store.draft['time'] <= 60) {

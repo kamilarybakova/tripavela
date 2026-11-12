@@ -846,12 +846,6 @@ extension _AtlasScreens on _TravelScreenState {
         ),
         profileItem(Icons.history, copy.message500, () => clear('history')),
         profileItem(Icons.delete_outline, copy.message501, () => clear('all')),
-        Section(copy.message502),
-        profileItem(
-          Icons.science_outlined,
-          copy.message503,
-          () => open('demo'),
-        ),
         SizedBox(height: 24),
         Text(copy.message481),
       ],
@@ -931,89 +925,9 @@ extension _AtlasScreens on _TravelScreenState {
             },
           ),
         Text(copy.message520),
-        SizedBox(height: 24),
-        button(copy.message521, () => open('s02', extra: 'repeat')),
       ],
     ),
   );
-  Widget demoPage() => PageFrame(
-    title: copy.message522,
-    leading: backButton(),
-    child: Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Panel(child: Text(copy.message523)),
-        Section(copy.message524),
-        for (final e in {
-          'closed': copy.message525,
-          'weather': copy.message526,
-          'noAlternatives': copy.message527,
-          'mapsError': copy.message528,
-          'saveError': copy.message529,
-          'late': copy.message530,
-        }.entries)
-          SwitchListTile(
-            contentPadding: EdgeInsets.zero,
-            title: Text(e.value),
-            value: store.demo[e.key] == true,
-            onChanged: (v) => act(
-              () => store.change((s) => s['demo'][e.key] = v, allowError: true),
-            ),
-          ),
-        Section(copy.message531),
-        for (final preset in [
-          copy.message532,
-          copy.message533,
-          copy.message019,
-          copy.message534,
-        ])
-          Padding(
-            padding: EdgeInsets.only(bottom: 10),
-            child: OutlinedButton(
-              onPressed: () => presetDemo(preset),
-              child: Text(preset),
-            ),
-          ),
-      ],
-    ),
-  );
-  Future<void> presetDemo(String preset) async {
-    if (!await confirm(
-      copy.message535,
-      copy.message536,
-      yes: copy.message537,
-    )) {
-      return;
-    }
-    if (!await act(() async {
-      await store.clearData('all');
-      await store.change((s) {
-        s['onboarded'] = preset != copy.message532;
-        s['city'] = preset != copy.message532;
-        s['draft'] = defaultFilters();
-      }, allowError: true);
-      if (preset != copy.message532) {
-        final id = await store.start('r0');
-        if (preset == copy.message019) await store.pause(id);
-        if (preset == copy.message534) {
-          await store.arrive(id);
-          await store.advance(id);
-          await store.arrive(id);
-          await store.advance(id);
-          await store.branch(id, 0);
-          await store.arrive(id);
-          await store.advance(id);
-          await store.advance(id, skip: true);
-          final repeat = await store.start('r0');
-          await store.arrive(repeat);
-          await store.end(repeat);
-        }
-      }
-    })) {
-      return;
-    }
-    if (mounted) context.go(preset == copy.message532 ? '/s02' : '/home');
-  }
 }
 
 class StoredPhoto extends StatelessWidget {

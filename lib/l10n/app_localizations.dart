@@ -406,12 +406,6 @@ abstract class AppLocalizations {
   /// **'Где погуляем?'**
   String get message051;
 
-  /// No description provided for @message052.
-  ///
-  /// In ru, this message translates to:
-  /// **'В демоверсии доступны пять городов'**
-  String get message052;
-
   /// No description provided for @message053.
   ///
   /// In ru, this message translates to:
@@ -841,7 +835,7 @@ abstract class AppLocalizations {
   /// No description provided for @message124.
   ///
   /// In ru, this message translates to:
-  /// **'Пешком · доступно в демоверсии'**
+  /// **'Пеший маршрут'**
   String get message124;
 
   /// No description provided for @message125.
@@ -1618,24 +1612,6 @@ abstract class AppLocalizations {
   /// **'Я на месте'**
   String get message253;
 
-  /// No description provided for @message254.
-  ///
-  /// In ru, this message translates to:
-  /// **'Место закрыто · демосценарий'**
-  String get message254;
-
-  /// No description provided for @message255.
-  ///
-  /// In ru, this message translates to:
-  /// **'Погода изменилась · демосценарий'**
-  String get message255;
-
-  /// No description provided for @message256.
-  ///
-  /// In ru, this message translates to:
-  /// **'Посмотреть замену'**
-  String get message256;
-
   /// No description provided for @message257.
   ///
   /// In ru, this message translates to:
@@ -2109,12 +2085,6 @@ abstract class AppLocalizations {
   /// In ru, this message translates to:
   /// **'Куда повернём дальше?'**
   String get message335;
-
-  /// No description provided for @message336.
-  ///
-  /// In ru, this message translates to:
-  /// **'Обе ветки недоступны в демонстрационном состоянии. Посещённые места сохранятся.'**
-  String get message336;
 
   /// No description provided for @message337.
   ///
@@ -2977,7 +2947,7 @@ abstract class AppLocalizations {
   /// No description provided for @message480.
   ///
   /// In ru, this message translates to:
-  /// **'О демоверсии'**
+  /// **'О приложении'**
   String get message480;
 
   /// No description provided for @message481.
@@ -3106,18 +3076,6 @@ abstract class AppLocalizations {
   /// **'Сбросить все данные'**
   String get message501;
 
-  /// No description provided for @message502.
-  ///
-  /// In ru, this message translates to:
-  /// **'Демонстрация'**
-  String get message502;
-
-  /// No description provided for @message503.
-  ///
-  /// In ru, this message translates to:
-  /// **'Панель демонстрационных сценариев'**
-  String get message503;
-
   /// No description provided for @message504.
   ///
   /// In ru, this message translates to:
@@ -3163,7 +3121,7 @@ abstract class AppLocalizations {
   /// No description provided for @message511.
   ///
   /// In ru, this message translates to:
-  /// **'Версия 1.0.0 · интерактивный прототип'**
+  /// **'Версия 1.0.0'**
   String get message511;
 
   /// No description provided for @message512.
@@ -3205,13 +3163,13 @@ abstract class AppLocalizations {
   /// No description provided for @message518.
   ///
   /// In ru, this message translates to:
-  /// **'Ограничения демоверсии'**
+  /// **'О маршрутах и планах'**
   String get message518;
 
   /// No description provided for @message519.
   ///
   /// In ru, this message translates to:
-  /// **'В каталоге 75 активных прогулок: по 15 для Стамбула, Баку, Тбилиси, Дубая и Нячанга. Главный сценарий — поездки на 2–7 дней по вашему вайбу и району отеля. Интерес «Шопинг» добавляет магазины, рынки и торговые центры. Данные, фото и планы доступны офлайн. Координаты, окна визитов, расходы и переезды ориентировочные; это редакционный прототип, не проверенный пеший трек и не расписание транспорта. Там, где указан осмотр снаружи, платный вход не предполагается. Некоторые фото иллюстрируют город или район. Перед визитом уточняйте часы и доступ. Новая уличная карта и построение пешего пути требуют сети; сохранённый план работает без неё.'**
+  /// **'В каталоге 75 активных прогулок: по 15 для Стамбула, Баку, Тбилиси, Дубая и Нячанга. Главный сценарий — поездки на 2–7 дней по вашему вайбу и району отеля. Интерес «Шопинг» добавляет магазины, рынки и торговые центры. Данные о маршрутах и сохранённые планы доступны офлайн. Для загрузки фотографий нужен интернет. Координаты, окна визитов, расходы и переезды ориентировочные. Там, где указан осмотр снаружи, платный вход не предполагается. Некоторые фото иллюстрируют город или район. Перед визитом уточняйте часы и доступ. Новая уличная карта и построение пешего пути требуют сети; сохранённый план работает без неё.'**
   String get message519;
 
   /// No description provided for @message520.
@@ -3219,108 +3177,6 @@ abstract class AppLocalizations {
   /// In ru, this message translates to:
   /// **'Фотографии: Wikimedia Commons и Unsplash. Шрифты: Cormorant Garamond, Manrope и Golos Text, SIL Open Font License.'**
   String get message520;
-
-  /// No description provided for @message521.
-  ///
-  /// In ru, this message translates to:
-  /// **'Посмотреть онбординг'**
-  String get message521;
-
-  /// No description provided for @message522.
-  ///
-  /// In ru, this message translates to:
-  /// **'Демонстрационные сценарии'**
-  String get message522;
-
-  /// No description provided for @message523.
-  ///
-  /// In ru, this message translates to:
-  /// **'Сценарии моделируют локальные состояния. Никакие данные не отправляются на сервер.'**
-  String get message523;
-
-  /// No description provided for @message524.
-  ///
-  /// In ru, this message translates to:
-  /// **'Состояния'**
-  String get message524;
-
-  /// No description provided for @message525.
-  ///
-  /// In ru, this message translates to:
-  /// **'Текущее место закрыто'**
-  String get message525;
-
-  /// No description provided for @message526.
-  ///
-  /// In ru, this message translates to:
-  /// **'Плохая погода'**
-  String get message526;
-
-  /// No description provided for @message527.
-  ///
-  /// In ru, this message translates to:
-  /// **'Замены недоступны'**
-  String get message527;
-
-  /// No description provided for @message528.
-  ///
-  /// In ru, this message translates to:
-  /// **'Ошибка открытия карт'**
-  String get message528;
-
-  /// No description provided for @message529.
-  ///
-  /// In ru, this message translates to:
-  /// **'Ошибка сохранения'**
-  String get message529;
-
-  /// No description provided for @message530.
-  ///
-  /// In ru, this message translates to:
-  /// **'Позднее время старта'**
-  String get message530;
-
-  /// No description provided for @message531.
-  ///
-  /// In ru, this message translates to:
-  /// **'Подготовить состояние'**
-  String get message531;
-
-  /// No description provided for @message532.
-  ///
-  /// In ru, this message translates to:
-  /// **'Новый пользователь'**
-  String get message532;
-
-  /// No description provided for @message533.
-  ///
-  /// In ru, this message translates to:
-  /// **'Есть активная прогулка'**
-  String get message533;
-
-  /// No description provided for @message534.
-  ///
-  /// In ru, this message translates to:
-  /// **'Заполненный атлас'**
-  String get message534;
-
-  /// No description provided for @message535.
-  ///
-  /// In ru, this message translates to:
-  /// **'Подготовить демосостояние?'**
-  String get message535;
-
-  /// No description provided for @message536.
-  ///
-  /// In ru, this message translates to:
-  /// **'Текущий прогресс будет заменён. Заметки и фотографии текущего набора будут удалены.'**
-  String get message536;
-
-  /// No description provided for @message537.
-  ///
-  /// In ru, this message translates to:
-  /// **'Подготовить'**
-  String get message537;
 
   /// No description provided for @message538.
   ///
@@ -3670,11 +3526,11 @@ abstract class AppLocalizations {
   /// **'Геолокация работает, пока открыт экран прогулки или его карта. При сворачивании и уходе с экрана отслеживание останавливается. Пройденный след хранится только в памяти; полученный путь сохраняется на устройстве для работы без связи.'**
   String get navConsentLocal;
 
-  /// No description provided for @navConsentAccept.
+  /// No description provided for @navConsentContinue.
   ///
   /// In ru, this message translates to:
-  /// **'Разрешить построение пути'**
-  String get navConsentAccept;
+  /// **'Продолжить'**
+  String get navConsentContinue;
 
   /// No description provided for @navLocating.
   ///
@@ -3727,7 +3583,7 @@ abstract class AppLocalizations {
   /// No description provided for @navTooFar.
   ///
   /// In ru, this message translates to:
-  /// **'Вы далеко от остановки — больше 30 км. Доберитесь до района прогулки или посмотрите пример с условным стартом.'**
+  /// **'Вы далеко от остановки — больше 30 км. Доберитесь до района прогулки.'**
   String get navTooFar;
 
   /// No description provided for @navPoorAccuracy.
@@ -3747,12 +3603,6 @@ abstract class AppLocalizations {
   /// In ru, this message translates to:
   /// **'Строим пеший путь по улицам…'**
   String get navRouting;
-
-  /// No description provided for @navDemoExplanation.
-  ///
-  /// In ru, this message translates to:
-  /// **'Пример пути с условной точкой старта рядом с текущей остановкой. Синяя точка в этом режиме — не ваше местоположение.'**
-  String get navDemoExplanation;
 
   /// No description provided for @navStale.
   ///
@@ -3781,7 +3631,7 @@ abstract class AppLocalizations {
   /// No description provided for @navIntro.
   ///
   /// In ru, this message translates to:
-  /// **'На карте — текущая открытая остановка. Включите путь от вашего положения или посмотрите пример.'**
+  /// **'На карте — текущая открытая остановка. Включите путь от вашего положения.'**
   String get navIntro;
 
   /// No description provided for @navKm.
@@ -3814,23 +3664,11 @@ abstract class AppLocalizations {
   /// **'Текущая остановка'**
   String get navDestination;
 
-  /// No description provided for @navDemoMarker.
-  ///
-  /// In ru, this message translates to:
-  /// **'Условная позиция для примера'**
-  String get navDemoMarker;
-
   /// No description provided for @navYou.
   ///
   /// In ru, this message translates to:
   /// **'Ваше положение'**
   String get navYou;
-
-  /// No description provided for @navDemoBadge.
-  ///
-  /// In ru, this message translates to:
-  /// **'Пример · условный старт'**
-  String get navDemoBadge;
 
   /// No description provided for @navCachedBadge.
   ///
@@ -3903,24 +3741,6 @@ abstract class AppLocalizations {
   /// In ru, this message translates to:
   /// **'Путь от меня'**
   String get navStart;
-
-  /// No description provided for @navExample.
-  ///
-  /// In ru, this message translates to:
-  /// **'Посмотреть пример'**
-  String get navExample;
-
-  /// No description provided for @navPauseExample.
-  ///
-  /// In ru, this message translates to:
-  /// **'Пауза примера'**
-  String get navPauseExample;
-
-  /// No description provided for @navWalkExample.
-  ///
-  /// In ru, this message translates to:
-  /// **'Пройти пример'**
-  String get navWalkExample;
 
   /// No description provided for @navStopTracking.
   ///

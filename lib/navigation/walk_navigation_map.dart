@@ -120,38 +120,39 @@ class _WalkNavigationMapState extends State<WalkNavigationMap>
         context: context,
         useSafeArea: true,
         isScrollControlled: true,
-        showDragHandle: true,
-        builder: (c) => SingleChildScrollView(
-          padding: const EdgeInsets.fromLTRB(24, 4, 24, 24),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Text(
-                copy.navConsentTitle,
-                style: Theme.of(c).textTheme.headlineSmall,
-              ),
-              const SizedBox(height: 14),
-              Text(copy.navConsentBody),
-              const SizedBox(height: 12),
-              Text(copy.navConsentLocal),
-              const SizedBox(height: 20),
-              FilledButton(
-                onPressed: () => Navigator.pop(c, true),
-                child: Text(copy.navConsentAccept),
-              ),
-              TextButton(
-                onPressed: () => Navigator.pop(c, false),
-                child: Text(copy.message030),
-              ),
-            ],
+        isDismissible: false,
+        enableDrag: false,
+        showDragHandle: false,
+        builder: (c) => PopScope<bool>(
+          canPop: false,
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.all(24),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Text(
+                  copy.navConsentTitle,
+                  style: Theme.of(c).textTheme.headlineSmall,
+                ),
+                const SizedBox(height: 14),
+                Text(copy.navConsentBody),
+                const SizedBox(height: 12),
+                Text(copy.navConsentLocal),
+                const SizedBox(height: 20),
+                FilledButton(
+                  onPressed: () => Navigator.pop(c, true),
+                  child: Text(copy.navConsentContinue),
+                ),
+              ],
+            ),
           ),
         ),
       );
       if (approved != true || !mounted) return;
       engine.onlineApproved = true;
     }
-    if (!engine.tracking || engine.isDemo || engine.fix == null) {
+    if (!engine.tracking || engine.fix == null) {
       await engine.startLocation();
     } else {
       await engine.buildRoute(force: true);
@@ -326,7 +327,6 @@ class _NavigationMapViewState extends State<NavigationMapView> {
       };
     }
     if (engine.routingNow) return copy.navRouting;
-    if (engine.isDemo) return copy.navDemoExplanation;
     if (engine.stale) return copy.navStale;
     if (engine.nearDestination) return copy.navNear;
     if (engine.cached) return copy.navCached;
@@ -484,7 +484,7 @@ class _NavigationMapViewState extends State<NavigationMapView> {
                     width: 28,
                     height: 28,
                     child: Semantics(
-                      label: engine.isDemo ? copy.navDemoMarker : copy.navYou,
+                      label: copy.navYou,
                       child: Container(
                         decoration: BoxDecoration(
                           color: const Color(0xFF3D88A2),
@@ -511,11 +511,7 @@ class _NavigationMapViewState extends State<NavigationMapView> {
               borderRadius: BorderRadius.circular(20),
             ),
             child: Text(
-              engine.isDemo
-                  ? copy.navDemoBadge
-                  : engine.cached
-                  ? copy.navCachedBadge
-                  : copy.navWalkingBadge,
+              engine.cached ? copy.navCachedBadge : copy.navWalkingBadge,
               style: const TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w700,
@@ -589,11 +585,6 @@ class _NavigationMapViewState extends State<NavigationMapView> {
                   icon: const Icon(Icons.near_me_outlined, size: 18),
                   label: Text(copy.navStart),
                 ),
-                _control(
-                  Icons.play_circle_outline,
-                  copy.navExample,
-                  () => engine.showDemo(),
-                ),
               ],
             ),
           ),
@@ -654,7 +645,7 @@ class _NavigationMapViewState extends State<NavigationMapView> {
           Text('О карте', style: Theme.of(context).textTheme.titleLarge),
           const SizedBox(height: 12),
           Text(copy.navOfflineNote),
-          if (engine.fix != null && !engine.isDemo) ...[
+          if (engine.fix != null) ...[
             const SizedBox(height: 12),
             Text(copy.navAccuracy(engine.fix!.accuracy.round().toString())),
           ],
@@ -664,15 +655,6 @@ class _NavigationMapViewState extends State<NavigationMapView> {
             icon: const Icon(Icons.edit_location_alt_outlined, size: 18),
             label: Text(copy.navFixMap),
           ),
-          if (widget.enabled)
-            TextButton.icon(
-              onPressed: () {
-                Navigator.pop(context);
-                engine.showDemo();
-              },
-              icon: const Icon(Icons.play_circle_outline, size: 18),
-              label: Text(copy.navExample),
-            ),
         ],
       ),
     ),
@@ -738,14 +720,6 @@ class _NavigationMapViewState extends State<NavigationMapView> {
           padding: const EdgeInsets.only(bottom: 8),
           child: Text(_status, style: Theme.of(context).textTheme.bodySmall),
         ),
-      if (engine.isDemo)
-        const Padding(
-          padding: EdgeInsets.only(bottom: 8),
-          child: Text(
-            'Пример · точка на карте условная',
-            style: TextStyle(fontSize: 12),
-          ),
-        ),
       if (_tilesFailed)
         TextButton.icon(
           onPressed: () => setState(() {
@@ -769,24 +743,7 @@ class _NavigationMapViewState extends State<NavigationMapView> {
                     : widget.onStart,
                 icon: const Icon(Icons.near_me_outlined, size: 18),
                 label: Text(
-                  engine.tracking && !engine.isDemo
-                      ? copy.navRefreshRoute
-                      : copy.navStart,
-                ),
-              ),
-            IconButton.outlined(
-              tooltip: copy.navExample,
-              onPressed: engine.routingNow ? null : () => engine.showDemo(),
-              icon: const Icon(Icons.play_circle_outline),
-            ),
-            if (engine.isDemo && engine.path != null)
-              IconButton.filledTonal(
-                tooltip: engine.demoPlaying
-                    ? copy.navPauseExample
-                    : copy.navWalkExample,
-                onPressed: engine.toggleDemoWalk,
-                icon: Icon(
-                  engine.demoPlaying ? Icons.pause : Icons.directions_walk,
+                  engine.tracking ? copy.navRefreshRoute : copy.navStart,
                 ),
               ),
             if (engine.tracking)

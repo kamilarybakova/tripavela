@@ -140,11 +140,13 @@ void main() {
   });
   test('Save error does not commit changes or duplicate visit', () async {
     final id = await store.start('r0');
-    await store.change((s) => s['demo']['saveError'] = true, allowError: true);
-    await expectLater(store.arrive(id), throwsStateError);
+    final database = store.db!;
+    final path = database.path;
+    await database.close();
+    await expectLater(store.arrive(id), throwsA(isA<Exception>()));
     expect(store.visits, isEmpty);
     expect(store.session(id)['stops'][0]['result'], 'current');
-    await store.change((s) => s['demo']['saveError'] = false, allowError: true);
+    store.db = await databaseFactoryMemory.openDatabase(path);
     await store.arrive(id);
     expect(store.visits.length, 1);
   });

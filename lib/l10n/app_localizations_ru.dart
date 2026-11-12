@@ -170,9 +170,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get message051 => 'Где погуляем?';
 
   @override
-  String get message052 => 'В демоверсии доступны пять городов';
-
-  @override
   String get message053 => 'Найти город';
 
   @override
@@ -394,7 +391,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get message123 => 'Сделаем прогулку комфортной';
 
   @override
-  String get message124 => 'Пешком · доступно в демоверсии';
+  String get message124 => 'Пеший маршрут';
 
   @override
   String get message125 => 'Комфортная дистанция';
@@ -852,15 +849,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get message253 => 'Я на месте';
 
   @override
-  String get message254 => 'Место закрыто · демосценарий';
-
-  @override
-  String get message255 => 'Погода изменилась · демосценарий';
-
-  @override
-  String get message256 => 'Посмотреть замену';
-
-  @override
   String get message257 => 'Почему идём сюда';
 
   @override
@@ -1119,10 +1107,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get message335 => 'Куда повернём дальше?';
-
-  @override
-  String get message336 =>
-      'Обе ветки недоступны в демонстрационном состоянии. Посещённые места сохранятся.';
 
   @override
   String get message337 => 'Оба варианта подходят вашим условиям.';
@@ -1582,7 +1566,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get message479 => 'Как работает приложение';
 
   @override
-  String get message480 => 'О демоверсии';
+  String get message480 => 'О приложении';
 
   @override
   String get message481 =>
@@ -1652,12 +1636,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get message501 => 'Сбросить все данные';
 
   @override
-  String get message502 => 'Демонстрация';
-
-  @override
-  String get message503 => 'Панель демонстрационных сценариев';
-
-  @override
   String get message504 => ' Активная прогулка тоже будет удалена.';
 
   @override
@@ -1683,7 +1661,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get message510 => 'О приложении';
 
   @override
-  String get message511 => 'Версия 1.0.0 · интерактивный прототип';
+  String get message511 => 'Версия 1.0.0';
 
   @override
   String get message512 => 'Город раскрывается по пути';
@@ -1707,68 +1685,15 @@ class AppLocalizationsRu extends AppLocalizations {
       'Данные сохраняются на этом устройстве. После удаления приложения они могут быть потеряны. Синхронизация и резервное копирование не предусмотрены.';
 
   @override
-  String get message518 => 'Ограничения демоверсии';
+  String get message518 => 'О маршрутах и планах';
 
   @override
   String get message519 =>
-      'В каталоге 75 активных прогулок: по 15 для Стамбула, Баку, Тбилиси, Дубая и Нячанга. Главный сценарий — поездки на 2–7 дней по вашему вайбу и району отеля. Интерес «Шопинг» добавляет магазины, рынки и торговые центры. Данные, фото и планы доступны офлайн. Координаты, окна визитов, расходы и переезды ориентировочные; это редакционный прототип, не проверенный пеший трек и не расписание транспорта. Там, где указан осмотр снаружи, платный вход не предполагается. Некоторые фото иллюстрируют город или район. Перед визитом уточняйте часы и доступ. Новая уличная карта и построение пешего пути требуют сети; сохранённый план работает без неё.';
+      'В каталоге 75 активных прогулок: по 15 для Стамбула, Баку, Тбилиси, Дубая и Нячанга. Главный сценарий — поездки на 2–7 дней по вашему вайбу и району отеля. Интерес «Шопинг» добавляет магазины, рынки и торговые центры. Данные о маршрутах и сохранённые планы доступны офлайн. Для загрузки фотографий нужен интернет. Координаты, окна визитов, расходы и переезды ориентировочные. Там, где указан осмотр снаружи, платный вход не предполагается. Некоторые фото иллюстрируют город или район. Перед визитом уточняйте часы и доступ. Новая уличная карта и построение пешего пути требуют сети; сохранённый план работает без неё.';
 
   @override
   String get message520 =>
       'Фотографии: Wikimedia Commons и Unsplash. Шрифты: Cormorant Garamond, Manrope и Golos Text, SIL Open Font License.';
-
-  @override
-  String get message521 => 'Посмотреть онбординг';
-
-  @override
-  String get message522 => 'Демонстрационные сценарии';
-
-  @override
-  String get message523 =>
-      'Сценарии моделируют локальные состояния. Никакие данные не отправляются на сервер.';
-
-  @override
-  String get message524 => 'Состояния';
-
-  @override
-  String get message525 => 'Текущее место закрыто';
-
-  @override
-  String get message526 => 'Плохая погода';
-
-  @override
-  String get message527 => 'Замены недоступны';
-
-  @override
-  String get message528 => 'Ошибка открытия карт';
-
-  @override
-  String get message529 => 'Ошибка сохранения';
-
-  @override
-  String get message530 => 'Позднее время старта';
-
-  @override
-  String get message531 => 'Подготовить состояние';
-
-  @override
-  String get message532 => 'Новый пользователь';
-
-  @override
-  String get message533 => 'Есть активная прогулка';
-
-  @override
-  String get message534 => 'Заполненный атлас';
-
-  @override
-  String get message535 => 'Подготовить демосостояние?';
-
-  @override
-  String get message536 =>
-      'Текущий прогресс будет заменён. Заметки и фотографии текущего набора будут удалены.';
-
-  @override
-  String get message537 => 'Подготовить';
 
   @override
   String get message538 => 'Заметка сохранена';
@@ -1978,7 +1903,7 @@ class AppLocalizationsRu extends AppLocalizations {
       'Геолокация работает, пока открыт экран прогулки или его карта. При сворачивании и уходе с экрана отслеживание останавливается. Пройденный след хранится только в памяти; полученный путь сохраняется на устройстве для работы без связи.';
 
   @override
-  String get navConsentAccept => 'Разрешить построение пути';
+  String get navConsentContinue => 'Продолжить';
 
   @override
   String get navLocating => 'Определяем ваше положение…';
@@ -2013,7 +1938,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get navTooFar =>
-      'Вы далеко от остановки — больше 30 км. Доберитесь до района прогулки или посмотрите пример с условным стартом.';
+      'Вы далеко от остановки — больше 30 км. Доберитесь до района прогулки.';
 
   @override
   String get navPoorAccuracy =>
@@ -2025,10 +1950,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get navRouting => 'Строим пеший путь по улицам…';
-
-  @override
-  String get navDemoExplanation =>
-      'Пример пути с условной точкой старта рядом с текущей остановкой. Синяя точка в этом режиме — не ваше местоположение.';
 
   @override
   String get navStale =>
@@ -2048,7 +1969,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get navIntro =>
-      'На карте — текущая открытая остановка. Включите путь от вашего положения или посмотрите пример.';
+      'На карте — текущая открытая остановка. Включите путь от вашего положения.';
 
   @override
   String get navKm => 'км';
@@ -2068,13 +1989,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get navDestination => 'Текущая остановка';
 
   @override
-  String get navDemoMarker => 'Условная позиция для примера';
-
-  @override
   String get navYou => 'Ваше положение';
-
-  @override
-  String get navDemoBadge => 'Пример · условный старт';
 
   @override
   String get navCachedBadge => 'Сохранённый путь';
@@ -2115,15 +2030,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get navStart => 'Путь от меня';
-
-  @override
-  String get navExample => 'Посмотреть пример';
-
-  @override
-  String get navPauseExample => 'Пауза примера';
-
-  @override
-  String get navWalkExample => 'Пройти пример';
 
   @override
   String get navStopTracking => 'Остановить геолокацию';

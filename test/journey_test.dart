@@ -17,6 +17,47 @@ class JourneyStore extends TravelStore {
 
 void main() {
   testWidgets(
+    'Final onboarding button opens city selection and saves the city',
+    (tester) async {
+      SharedPreferences.setMockInitialValues({});
+      final store = JourneyStore();
+      final database = await databaseFactoryMemory.openDatabase('onboarding');
+      addTearDown(database.close);
+      await tester.runAsync(() => store.init(database: database));
+      await tester.pumpWidget(
+        ProviderScope(
+          overrides: [storeProvider.overrideWith((ref) => store)],
+          child: const TravelApp(),
+        ),
+      );
+      await tester.pumpAndSettle();
+
+      for (final label in ['Дальше', 'Дальше', 'Выбрать город']) {
+        await tester.tap(find.widgetWithText(FilledButton, label));
+        await tester.pumpAndSettle();
+      }
+
+      expect(find.text('Куда отправимся?'), findsOneWidget);
+      await tester.enterText(find.byType(TextField), 'Баку');
+      await tester.pumpAndSettle();
+      final cityCard = find.descendant(
+        of: find.byType(InkWell),
+        matching: find.text('Баку'),
+      );
+      await tester.ensureVisible(cityCard);
+      await tester.tap(cityCard);
+      await tester.pumpAndSettle();
+      expect(find.text('Спланировать поездку'), findsOneWidget);
+      expect(store.cityId, 'baku');
+      expect(store.state['city'], true);
+
+      await tester.tap(find.text('Баку').first);
+      await tester.pumpAndSettle();
+      expect(find.text('Куда отправимся?'), findsOneWidget);
+    },
+  );
+
+  testWidgets(
     'First launch through mission, replacement, branch, finish and atlas',
     (tester) async {
       tester.view.physicalSize = const Size(390, 844);

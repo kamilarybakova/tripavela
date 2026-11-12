@@ -29,7 +29,6 @@ class NavigationEnvironment {
         location: DeviceLocationSource(),
         routing: OsrmFootRoutingService(),
         cache: SembastNavigationCache(db, tripId),
-        examples: AssetNavigationExamples(),
       );
 }
 

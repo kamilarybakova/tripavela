@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
-import 'package:flutter/services.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:http/http.dart' as http;
 import 'package:latlong2/latlong.dart';
@@ -94,10 +93,7 @@ class OsrmFootRoutingService implements FootRoutingService {
             uri,
             headers: kIsWeb
                 ? {}
-                : {
-                    'User-Agent':
-                        'Tripavela/1.0 (Flutter walking prototype)',
-                  },
+                : {'User-Agent': 'Tripavela/1.0 (Flutter walking prototype)'},
           )
           .timeout(const Duration(seconds: 15));
       if (response.statusCode != 200) {
@@ -186,29 +182,5 @@ class MemoryNavigationCache implements NavigationCache {
     id = destinationId;
     target = destination;
     value = route;
-  }
-}
-
-abstract class NavigationExamples {
-  Future<FootRoute?> load(String destinationId);
-}
-
-class AssetNavigationExamples implements NavigationExamples {
-  @override
-  Future<FootRoute?> load(String destinationId) async {
-    try {
-      final json =
-          jsonDecode(
-                await rootBundle.loadString(
-                  'assets/data/navigation_example.json',
-                ),
-              )
-              as Map<String, dynamic>;
-      return json['destinationId'] == destinationId
-          ? FootRoute.fromJson(Map<String, dynamic>.from(json['route'] as Map))
-          : null;
-    } catch (_) {
-      return null;
-    }
   }
 }

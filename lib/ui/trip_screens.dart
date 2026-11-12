@@ -152,28 +152,6 @@ extension _TripScreens on _TravelScreenState {
                 trip['filters']['stroller'] == true,
           ),
           SizedBox(height: 20),
-          if (store.demo['closed'] == true ||
-              store.demo['weather'] == true) ...[
-            Panel(
-              color: Theme.of(context).colorScheme.secondaryContainer,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    store.demo['closed'] == true
-                        ? copy.message254
-                        : copy.message255,
-                    style: Theme.of(context).textTheme.titleMedium,
-                  ),
-                  TextButton(
-                    onPressed: offerReplacement,
-                    child: Text(copy.message256),
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(height: 16),
-          ],
           Text(
             '${trip['snapshot']['stopMinutes'] ?? p.visitMinutes} мин на месте',
             style: Theme.of(context).textTheme.bodySmall,
@@ -209,15 +187,13 @@ extension _TripScreens on _TravelScreenState {
   Future<void> openMaps(Place place) async {
     bool ok = false;
     try {
-      if (store.demo['mapsError'] != true) {
-        ok = await launchUrl(
-          Uri.https('www.google.com', '/maps/search/', {
-            'api': '1',
-            'query': place.address,
-          }),
-          mode: LaunchMode.externalApplication,
-        );
-      }
+      ok = await launchUrl(
+        Uri.https('www.google.com', '/maps/search/', {
+          'api': '1',
+          'query': place.address,
+        }),
+        mode: LaunchMode.externalApplication,
+      );
     } catch (_) {
       ok = false;
     }
@@ -796,8 +772,6 @@ extension _TripScreens on _TravelScreenState {
   }
 
   Widget branch() {
-    final unavailable =
-        store.demo['noAlternatives'] == true && store.demo['closed'] == true;
     return PageFrame(
       title: copy.message333,
       leading: IconButton(
@@ -805,84 +779,78 @@ extension _TripScreens on _TravelScreenState {
         onPressed: () => context.go('/home'),
         icon: Icon(Icons.close),
       ),
-      footer: unavailable
-          ? button(copy.message284, endTrip)
-          : button(
-              copy.message334,
-              selection < 0
-                  ? null
-                  : () async {
-                      if (await act(
-                            () => store.branch(widget.id!, selection),
-                          ) &&
-                          mounted) {
-                        context.pushReplacement('/s12?id=${widget.id}');
-                      }
-                    },
-            ),
+      footer: button(
+        copy.message334,
+        selection < 0
+            ? null
+            : () async {
+                if (await act(() => store.branch(widget.id!, selection)) &&
+                    mounted) {
+                  context.pushReplacement('/s12?id=${widget.id}');
+                }
+              },
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           title(copy.message335),
-          bodyText(unavailable ? copy.message336 : copy.message337),
-          if (!unavailable)
-            for (var i = 0; i < 2; i++)
-              Padding(
-                padding: EdgeInsets.only(bottom: 16),
-                child: Semantics(
-                  selected: selection == i,
-                  button: true,
-                  child: InkWell(
-                    borderRadius: BorderRadius.circular(20),
-                    onTap: () => updateUi(() => selection = i),
-                    child: Panel(
-                      color: selection == i
-                          ? Theme.of(context).colorScheme.primaryContainer
-                          : null,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            children: [
-                              Icon(
-                                i == 0
-                                    ? Icons.spa_outlined
-                                    : Icons.auto_awesome_outlined,
-                              ),
-                              Spacer(),
-                              Icon(
-                                selection == i
-                                    ? Icons.radio_button_checked
-                                    : Icons.radio_button_off,
-                              ),
-                            ],
-                          ),
-                          SizedBox(height: 18),
-                          Text(
-                            trip['snapshot']['branchHints'][i]['title']
-                                as String,
-                            style: Theme.of(context).textTheme.titleLarge,
-                          ),
-                          SizedBox(height: 10),
-                          Text(
-                            trip['snapshot']['branchHints'][i]['description']
-                                as String,
-                          ),
-                          SizedBox(height: 16),
-                          Text(
-                            '+${trip['snapshot']['branchDelta'][i]['minutes']} мин · +${trip['snapshot']['branchDelta'][i]['meters']} м · без обязательных расходов',
-                          ),
-                          Text(
-                            trip['snapshot']['stairs'] == 'no'
-                                ? copy.message229
-                                : copy.message343,
-                          ),
-                        ],
-                      ),
+          bodyText(copy.message337),
+          for (var i = 0; i < 2; i++)
+            Padding(
+              padding: EdgeInsets.only(bottom: 16),
+              child: Semantics(
+                selected: selection == i,
+                button: true,
+                child: InkWell(
+                  borderRadius: BorderRadius.circular(20),
+                  onTap: () => updateUi(() => selection = i),
+                  child: Panel(
+                    color: selection == i
+                        ? Theme.of(context).colorScheme.primaryContainer
+                        : null,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(
+                              i == 0
+                                  ? Icons.spa_outlined
+                                  : Icons.auto_awesome_outlined,
+                            ),
+                            Spacer(),
+                            Icon(
+                              selection == i
+                                  ? Icons.radio_button_checked
+                                  : Icons.radio_button_off,
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 18),
+                        Text(
+                          trip['snapshot']['branchHints'][i]['title'] as String,
+                          style: Theme.of(context).textTheme.titleLarge,
+                        ),
+                        SizedBox(height: 10),
+                        Text(
+                          trip['snapshot']['branchHints'][i]['description']
+                              as String,
+                        ),
+                        SizedBox(height: 16),
+                        Text(
+                          '+${trip['snapshot']['branchDelta'][i]['minutes']} мин · +${trip['snapshot']['branchDelta'][i]['meters']} м · без обязательных расходов',
+                        ),
+                        Text(
+                          trip['snapshot']['stairs'] == 'no'
+                              ? copy.message229
+                              : copy.message343,
+                        ),
+                      ],
                     ),
                   ),
                 ),
               ),
+            ),
         ],
       ),
     );
@@ -957,9 +925,7 @@ extension _TripScreens on _TravelScreenState {
 
   Widget replacement() {
     final alternative = trip['snapshot']['alternative'] as String;
-    final no =
-        store.demo['noAlternatives'] == true ||
-        alternative == currentStop['place'];
+    final no = alternative == currentStop['place'];
     return PageFrame(
       title: copy.message344,
       leading: backButton(),
@@ -1066,8 +1032,7 @@ extension _TripScreens on _TravelScreenState {
     ),
     footer: button(copy.message365, () async {
       if (await act(() => store.resume(widget.id!)) && mounted) {
-        if (store.cityNow().hour > (trip['snapshot']['lastStart'] as int) ||
-            store.demo['late'] == true) {
+        if (store.cityNow().hour > (trip['snapshot']['lastStart'] as int)) {
           message(copy.message366);
           context.pushReplacement('/s17?id=${widget.id}');
         } else {

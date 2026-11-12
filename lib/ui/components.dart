@@ -169,6 +169,25 @@ class Section extends StatelessWidget {
   );
 }
 
+const _bundledPhotos = {
+  'assets/images/city.jpg',
+  'assets/images/coffee.jpg',
+  'assets/images/park.jpg',
+};
+
+ImageProvider _photoProvider(String path) {
+  const assetPrefix = 'assets/images/';
+  if (path.startsWith(assetPrefix) && !_bundledPhotos.contains(path)) {
+    return NetworkImage(
+      Uri.https(
+        'cvznqdmdqaijzwegyida.supabase.co',
+        '/storage/v1/object/public/tripavela-assets/${path.substring(assetPrefix.length)}',
+      ).toString(),
+    );
+  }
+  return path.startsWith('https://') ? NetworkImage(path) : AssetImage(path);
+}
+
 class Photo extends StatelessWidget {
   final String asset;
   final double height;
@@ -179,8 +198,8 @@ class Photo extends StatelessWidget {
     borderRadius: BorderRadius.circular(radius),
     child: asset.isEmpty
         ? fallback(context)
-        : Image.asset(
-            asset,
+        : Image(
+            image: _photoProvider(asset),
             height: height,
             width: double.infinity,
             fit: BoxFit.cover,
@@ -492,10 +511,11 @@ class JournalHero extends StatelessWidget {
         child: Stack(
           children: [
             Positioned.fill(
-              child: Image.asset(
-                image,
+              child: Image(
+                image: _photoProvider(image),
                 fit: BoxFit.cover,
                 alignment: Alignment.bottomCenter,
+                errorBuilder: (_, _, _) => ColoredBox(color: paper),
               ),
             ),
             Positioned.fill(

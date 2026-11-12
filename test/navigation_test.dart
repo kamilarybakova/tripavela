@@ -14,7 +14,7 @@ import 'package:tripavela/navigation/navigation_services.dart';
 
 FootRoute exampleRoute() => FootRoute.fromJson(
   Map<String, dynamic>.from(
-    (jsonDecode(File('assets/data/navigation_example.json').readAsStringSync())
+    (jsonDecode(File('test/fixtures/walking_route.json').readAsStringSync())
         as Map)['route'],
   ),
 );
@@ -64,12 +64,6 @@ class FakeRouting implements FootRoutingService {
   }
 }
 
-class FakeExamples implements NavigationExamples {
-  @override
-  Future<FootRoute?> load(String destinationId) async =>
-      destinationId == 'p00' ? exampleRoute() : null;
-}
-
 WalkNavigationController controller(
   FakeLocation location,
   FakeRouting routing, {
@@ -80,7 +74,6 @@ WalkNavigationController controller(
   location: location,
   routing: routing,
   cache: cache ?? MemoryNavigationCache(),
-  examples: FakeExamples(),
 );
 Future<void> flush() => Future<void>.delayed(Duration.zero);
 
@@ -225,23 +218,6 @@ void main() {
       await flush();
       expect(nav.routeIssue, RouteIssue.tooFar);
       expect(routing.calls, 0);
-      nav.dispose();
-      await gps.stream.close();
-    },
-  );
-  test(
-    'Demo never requests device location or writes a fictitious user route to cache',
-    () async {
-      final gps = FakeLocation(),
-          routing = FakeRouting(),
-          cache = MemoryNavigationCache();
-      final nav = controller(gps, routing, cache: cache);
-      await nav.showDemo();
-      expect(nav.isDemo, true);
-      expect(gps.checks, 0);
-      expect(routing.calls, 0);
-      expect(cache.value, isNull);
-      expect(nav.remainingMeters, greaterThan(100));
       nav.dispose();
       await gps.stream.close();
     },
