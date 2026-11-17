@@ -192,6 +192,19 @@ class _TripSetupState extends ConsumerState<TripSetupScreen> {
               store.cityNow().day + 1,
             ),
           );
+    final validCity =
+        store.availableCities.any((city) => city['id'] == brief.cityId)
+        ? brief.cityId
+        : store.cityId;
+    final zones = store.planningFor(validCity).zones;
+    if (validCity != brief.cityId ||
+        !zones.any((zone) => zone['id'] == brief.zone)) {
+      brief = TripBrief.fromJson({
+        ...brief.toJson(),
+        'cityId': validCity,
+        'zone': zones.first['id'],
+      });
+    }
     if (previous == null && draft is Map) {
       step = (draft['step'] as int? ?? 0).clamp(0, 2);
     }
@@ -302,7 +315,7 @@ class _TripSetupState extends ConsumerState<TripSetupScreen> {
               initialValue: brief.cityId,
               decoration: const InputDecoration(labelText: 'Город поездки'),
               items: [
-                for (final city in store.cities.values)
+                for (final city in store.availableCities)
                   DropdownMenuItem(
                     value: city['id'] as String,
                     child: Text(city['name']),
@@ -579,6 +592,13 @@ class TripPlanScreen extends ConsumerWidget {
         plan = ref.watch(storeProvider).travelPlan(id);
     if (plan == null) return _notFound(context);
     final b = plan.brief;
+    final zone = store
+        .planningFor(b.cityId)
+        .zones
+        .where((zone) => zone['id'] == b.zone)
+        .firstOrNull;
+    final zoneName =
+        zone?['name'] as String? ?? store.cityFor(b.cityId)['name'] as String;
     return PageFrame(
       title: 'Ваша поездка',
       leading: const BackButton(),
@@ -609,9 +629,7 @@ class TripPlanScreen extends ConsumerWidget {
           const SizedBox(height: 10),
           InfoLine(
             Icons.hotel_outlined,
-            b.hotel.isEmpty
-                ? store.planningFor(b.cityId).zone(b.zone)['name']
-                : '${b.hotel} · ${store.planningFor(b.cityId).zone(b.zone)['name']}',
+            b.hotel.isEmpty ? zoneName : '${b.hotel} · $zoneName',
           ),
           const SizedBox(height: 18),
           for (final day in plan.days)

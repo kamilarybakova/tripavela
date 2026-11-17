@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../data/api_config.dart';
 import '../data/remote_places.dart';
 import 'components.dart';
 
@@ -102,7 +103,7 @@ class _RemotePlacesScreenState extends State<RemotePlacesScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          if (cover != null && cover.scheme == 'https' && cover.hasAuthority)
+          if (isNetworkPhoto(cover))
             Padding(
               padding: const EdgeInsets.only(bottom: 12),
               child: Photo(place.coverUrl, height: 160),

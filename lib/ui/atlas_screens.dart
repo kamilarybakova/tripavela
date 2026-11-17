@@ -353,6 +353,10 @@ extension _AtlasScreens on _TravelScreenState {
       );
       if (photo == null || !mounted) return;
       final bytes = await photo.readAsBytes();
+      if (bytes.length > maxAtlasPhotoBytes) {
+        if (mounted) message('Фото должно быть не больше 20 МБ.');
+        return;
+      }
       final path = await persistPhoto(photo.path, bytes);
       final ok = await act(
         () => store.photo(visitId, path),
@@ -398,7 +402,9 @@ extension _AtlasScreens on _TravelScreenState {
           onPressed: () async {
             if (await confirm(
               copy.message447,
-              copy.message448,
+              store.account == null
+                  ? copy.message448
+                  : 'Фотография будет удалена из атласа на всех устройствах аккаунта.',
               yes: copy.message437,
             )) {
               if (await act(
@@ -610,7 +616,10 @@ extension _AtlasScreens on _TravelScreenState {
                     if (stop['original'] != null) Text(copy.message463),
                     if (stop['reason'] != null)
                       Text(copy.message464((stop['reason']).toString())),
-                    if (stop['result'] == 'visited')
+                    if (stop['result'] == 'visited' &&
+                        store.visits.any(
+                          (visit) => visit['place'] == stop['place'],
+                        ))
                       TextButton(
                         onPressed: () => open('s21', id: stop['place']),
                         child: Text(copy.message465),
@@ -689,11 +698,17 @@ extension _AtlasScreens on _TravelScreenState {
               ),
               SizedBox(height: 14),
               Text(
-                store.state['name'],
+                store.account?.name ?? store.state['name'],
                 style: Theme.of(context).textTheme.titleLarge,
               ),
+              if (store.account case final account?) Text(account.email),
               TextButton(onPressed: editName, child: Text(copy.message475)),
-              Text(copy.message476, textAlign: TextAlign.center),
+              Text(
+                store.account == null
+                    ? copy.message476
+                    : 'Атлас, прогулки и поездки синхронизируются с аккаунтом.',
+                textAlign: TextAlign.center,
+              ),
             ],
           ),
         ),
@@ -712,6 +727,45 @@ extension _AtlasScreens on _TravelScreenState {
           () => open('s02', extra: 'repeat'),
         ),
         profileItem(Icons.info_outline, copy.message480, () => open('s28')),
+        if (store.canImportLegacy)
+          profileItem(
+            Icons.move_to_inbox_outlined,
+            'Перенести данные со старой версии',
+            () async {
+              if (await confirm(
+                'Перенести данные?',
+                'Прогулки, поездки и открытия с этого устройства будут доступны в текущем аккаунте.',
+                yes: 'Перенести',
+              )) {
+                await act(
+                  store.importLegacyData,
+                  success: 'Данные перенесены.',
+                );
+              }
+            },
+          ),
+        if (store.account != null) ...[
+          profileItem(
+            Icons.sync,
+            'Синхронизировать данные',
+            () => act(store.refreshTravelData),
+          ),
+          if (store.activeWalkSyncConflict)
+            const Text(
+              'Активная прогулка обновилась на другом устройстве. Показана версия с сервера.',
+            ),
+          if (store.travelSyncUnavailable)
+            Text(
+              store.hasPendingTravelChanges
+                  ? 'Изменения сохранены на устройстве и ждут синхронизации.'
+                  : 'Сервер недоступен. Показаны сохранённые данные.',
+            ),
+        ],
+        if (store.account != null)
+          profileItem(Icons.logout, 'Выйти из аккаунта', () async {
+            final router = GoRouter.of(context);
+            if (await act(store.signOut) && mounted) router.go('/home');
+          }),
         SizedBox(height: 24),
         Text(copy.message481),
       ],
@@ -726,7 +780,7 @@ extension _AtlasScreens on _TravelScreenState {
         onTap: onTap,
       );
   Future<void> editName() async {
-    String name = store.state['name'];
+    String name = store.account?.name ?? store.state['name'];
     await sheet(copy.message482, [
       TextFormField(
         initialValue: name,
@@ -737,10 +791,8 @@ extension _AtlasScreens on _TravelScreenState {
       SizedBox(height: 16),
       button(copy.message286, () async {
         if (await act(
-              () => store.change(
-                (s) => s['name'] = name.trim().isEmpty
-                    ? copy.message484
-                    : name.trim(),
+              () => store.renameProfile(
+                name.trim().isEmpty ? copy.message484 : name.trim(),
               ),
             ) &&
             mounted) {
@@ -853,10 +905,12 @@ extension _AtlasScreens on _TravelScreenState {
   );
   Future<int> photoSize() async {
     var sum = 0;
-    for (final v in store.visits) {
-      for (final path in v['photos']) {
-        sum += (await readPhoto(path))?.length ?? 0;
-      }
+    final paths = {
+      for (final visit in store.visits)
+        ...(visit['photos'] as List).cast<String>(),
+    };
+    for (final path in paths) {
+      sum += await store.localVisitPhotoSize(path);
     }
     return sum;
   }
@@ -869,7 +923,10 @@ extension _AtlasScreens on _TravelScreenState {
         : type == 'photos'
         ? copy.message506
         : copy.message507;
-    if (await confirm(copy.message508, body, yes: copy.message437)) {
+    final confirmation = store.account != null
+        ? '$body Изменение применится на других устройствах аккаунта после синхронизации.'
+        : body;
+    if (await confirm(copy.message508, confirmation, yes: copy.message437)) {
       if (await act(() => store.clearData(type), success: copy.message509) &&
           mounted &&
           type == 'all') {
@@ -930,7 +987,7 @@ extension _AtlasScreens on _TravelScreenState {
   );
 }
 
-class StoredPhoto extends StatelessWidget {
+class StoredPhoto extends ConsumerStatefulWidget {
   final String path;
   final double width, height;
   final BoxFit fit;
@@ -942,25 +999,48 @@ class StoredPhoto extends StatelessWidget {
     this.fit = BoxFit.cover,
   });
   @override
+  ConsumerState<StoredPhoto> createState() => _StoredPhotoState();
+}
+
+class _StoredPhotoState extends ConsumerState<StoredPhoto> {
+  late Future<List<int>?> _bytes;
+
+  @override
+  void initState() {
+    super.initState();
+    _load();
+  }
+
+  @override
+  void didUpdateWidget(StoredPhoto oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.path != widget.path) _load();
+  }
+
+  void _load() {
+    _bytes = ref.read(storeProvider).readVisitPhoto(widget.path);
+  }
+
+  Widget _placeholder() => SizedBox(
+    width: widget.width,
+    height: widget.height,
+    child: const Center(child: Icon(Icons.image_not_supported_outlined)),
+  );
+
+  @override
   Widget build(BuildContext context) => FutureBuilder<List<int>?>(
-    future: readPhoto(path),
-    builder: (c, s) => s.data == null
-        ? SizedBox(
-            width: width,
-            height: height,
-            child: Center(child: Icon(Icons.image_not_supported_outlined)),
-          )
-        : Image.memory(
-            Uint8List.fromList(s.data!),
-            width: width,
-            height: height,
-            fit: fit,
-            errorBuilder: (c, e, st) => SizedBox(
-              width: width,
-              height: height,
-              child: Center(child: Icon(Icons.image_not_supported_outlined)),
-            ),
-          ),
+    future: _bytes,
+    builder: (context, snapshot) {
+      final bytes = snapshot.data;
+      if (bytes == null) return _placeholder();
+      return Image.memory(
+        Uint8List.fromList(bytes),
+        width: widget.width,
+        height: widget.height,
+        fit: widget.fit,
+        errorBuilder: (context, error, stack) => _placeholder(),
+      );
+    },
   );
 }
 

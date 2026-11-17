@@ -3,6 +3,8 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:sembast/sembast.dart';
 
+import 'api_config.dart';
+
 typedef RemotePlace = ({
   int id,
   String name,
@@ -18,10 +20,8 @@ class RemotePlaces {
   final Database database;
   static final _cache = stringMapStoreFactory
       .store('catalog')
-      .record('supabase_places');
-  static const _host = 'cvznqdmdqaijzwegyida.supabase.co';
-  static const _publishableKey =
-      'sb_publishable_pa4NioNxxVrYG3Ucdq8-Mw_5PI5J6TZ';
+      .record('fastapi_places:${tripavelaApiBase.origin}');
+  static const _pageSize = 100;
 
   Future<List<RemotePlace>?> readCache() async {
     final saved = await _cache.get(database);
@@ -33,26 +33,33 @@ class RemotePlaces {
     final rows = <dynamic>[];
     final places = <RemotePlace>[];
     try {
+      int? afterId;
       while (true) {
+        final uri = tripavelaApiBase
+            .resolve('/api/v1/places')
+            .replace(
+              queryParameters: {
+                'limit': '$_pageSize',
+                if (afterId != null) 'after_id': '$afterId',
+              },
+            );
         final response = await client
-            .get(
-              Uri.https(_host, '/rest/v1/places', {
-                'select': 'id,name,description,cover_url,latitude,longitude',
-                'is_published': 'eq.true',
-                'order': 'id.asc',
-                'limit': '100',
-                if (places.isNotEmpty) 'id': 'gt.${places.last.id}',
-              }),
-              headers: {'apikey': _publishableKey},
-            )
+            .get(uri)
             .timeout(const Duration(seconds: 8));
         if (response.statusCode != 200) {
           throw StateError('Places API returned HTTP ${response.statusCode}');
         }
         final page = jsonDecode(utf8.decode(response.bodyBytes)) as List;
-        if (page.isEmpty) break;
-        places.addAll(_decode(page));
+        final decoded = _decode(page);
+        for (final place in decoded) {
+          if (place.id <= (afterId ?? 0)) {
+            throw const FormatException('Place IDs must increase across pages');
+          }
+          afterId = place.id;
+        }
+        places.addAll(decoded);
         rows.addAll(page);
+        if (page.length < _pageSize) break;
       }
       await _cache.put(database, {'places': rows});
       return places;

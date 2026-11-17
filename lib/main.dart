@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -8,10 +10,55 @@ import 'data/remote_places.dart';
 import 'data/store.dart';
 import 'l10n/app_localizations.dart';
 import 'l10n/copy.dart';
+import 'ui/account_screen.dart';
 import 'ui/remote_places_screen.dart';
 import 'ui/screens.dart';
 import 'navigation/route_observer.dart';
 import 'planning/planning_screens.dart';
+
+const _activeWalkPaths = {
+  '/s12',
+  '/s13',
+  '/s14',
+  '/s15',
+  '/s16',
+  '/s17',
+  '/s18',
+};
+const _sessionPaths = {..._activeWalkPaths, '/s19', '/s23'};
+const _personalPaths = {
+  '/atlas',
+  '/profile',
+  '/trips',
+  '/plan-trip',
+  '/s11',
+  '/s21',
+  '/s22',
+  '/s24',
+  '/s26',
+  '/s27',
+  '/note',
+  '/gallery',
+  ..._sessionPaths,
+};
+
+bool _requiresTripavelaAccount(String path) =>
+    _personalPaths.contains(path) ||
+    path.startsWith('/trip-plan/') ||
+    path.startsWith('/trip-day/');
+
+String _afterLogin(String? value) {
+  final uri = value == null ? null : Uri.tryParse(value);
+  if (uri == null ||
+      uri.hasScheme ||
+      uri.hasAuthority ||
+      uri.path == '/account' ||
+      !uri.path.startsWith('/') ||
+      uri.path.startsWith('//')) {
+    return '/home';
+  }
+  return uri.toString();
+}
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -30,6 +77,7 @@ class TravelApp extends ConsumerStatefulWidget {
 
 class _TravelAppState extends ConsumerState<TravelApp> {
   late final GoRouter router;
+  late final AppLifecycleListener lifecycle;
   @override
   void initState() {
     super.initState();
@@ -52,9 +100,41 @@ class _TravelAppState extends ConsumerState<TravelApp> {
             (path == '/s03' && extra != 'change')) {
           return path == next ? null : next;
         }
+        if (path == '/account' && store.canUsePersonal) {
+          return _afterLogin(state.uri.queryParameters['return']);
+        }
+        if (_requiresTripavelaAccount(path) && !store.canUsePersonal) {
+          return accountLocation(state.uri);
+        }
+        final id = state.uri.queryParameters['id'];
+        if ((path == '/s10' || path == '/s11') &&
+            !store.allRoutes.any((route) => route.id == id)) {
+          return '/routes';
+        }
+        if (_sessionPaths.contains(path)) {
+          final walk = store.sessions
+              .where((trip) => trip['id'] == id)
+              .firstOrNull;
+          if (walk == null) return '/home';
+          if (_activeWalkPaths.contains(path) && walk['ended'] != null) {
+            return Uri(path: '/s19', queryParameters: {'id': id!}).toString();
+          }
+        }
+        if (path == '/s21' &&
+            !store.visits.any((visit) => visit['place'] == id)) {
+          return '/atlas';
+        }
+        if (const {'/note', '/gallery'}.contains(path) &&
+            !store.visits.any((visit) => visit['id'] == id)) {
+          return '/atlas';
+        }
         return null;
       },
       routes: [
+        GoRoute(
+          path: '/account',
+          builder: (context, state) => const AccountScreen(),
+        ),
         StatefulShellRoute.indexedStack(
           builder: (context, state, navigationShell) => TabShell(
             navigationShell: navigationShell,
@@ -108,11 +188,15 @@ class _TravelAppState extends ConsumerState<TravelApp> {
         ),
       ],
     );
+    lifecycle = AppLifecycleListener(
+      onResume: () => unawaited(store.refreshTravelData()),
+    );
     store.init();
   }
 
   @override
   void dispose() {
+    lifecycle.dispose();
     router.dispose();
     super.dispose();
   }

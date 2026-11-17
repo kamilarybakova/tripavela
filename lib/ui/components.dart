@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../core/theme.dart';
+import '../data/api_config.dart';
 import '../l10n/copy.dart';
 import '../domain/models.dart';
 
@@ -179,13 +180,12 @@ ImageProvider _photoProvider(String path) {
   const assetPrefix = 'assets/images/';
   if (path.startsWith(assetPrefix) && !_bundledPhotos.contains(path)) {
     return NetworkImage(
-      Uri.https(
-        'cvznqdmdqaijzwegyida.supabase.co',
-        '/storage/v1/object/public/tripavela-assets/${path.substring(assetPrefix.length)}',
-      ).toString(),
+      tripavelaMediaUri(path.substring(assetPrefix.length)).toString(),
     );
   }
-  return path.startsWith('https://') ? NetworkImage(path) : AssetImage(path);
+  return isNetworkPhoto(Uri.tryParse(path))
+      ? NetworkImage(path)
+      : AssetImage(path);
 }
 
 class Photo extends StatelessWidget {

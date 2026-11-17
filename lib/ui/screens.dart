@@ -8,8 +8,10 @@ import 'package:intl/intl.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../core/theme.dart';
 import '../data/database.dart';
+import '../data/atlas_photos.dart';
 import '../data/store.dart';
 import '../domain/models.dart';
+import 'account_screen.dart';
 import 'components.dart';
 import 'package:latlong2/latlong.dart';
 import '../navigation/navigation_environment.dart';
@@ -398,15 +400,23 @@ class _TravelScreenState extends ConsumerState<TravelScreen> {
     route: r,
     favorite: store.favorites.contains(r.id),
     onTap: onTap ?? () => open('s10', id: r.id),
-    onFavorite: () => act(
-      () => store.favorite(r.id),
-      success: store.favorites.contains(r.id)
-          ? copy.message032
-          : copy.message033,
-    ),
+    onFavorite: () => toggleFavorite(r),
     reason: reason,
     nearby: nearby,
   );
+  void toggleFavorite(WalkRoute route) {
+    if (!store.canUsePersonal) {
+      context.push(accountLocation(GoRouterState.of(context).uri));
+      return;
+    }
+    act(
+      () => store.favorite(route.id),
+      success: store.favorites.contains(route.id)
+          ? copy.message032
+          : copy.message033,
+    );
+  }
+
   Widget backButton() => IconButton(
     tooltip: copy.message034,
     onPressed: () => context.canPop() ? context.pop() : context.go('/home'),
@@ -595,7 +605,7 @@ class _TravelScreenState extends ConsumerState<TravelScreen> {
   }
 
   Widget city() {
-    final list = store.cities.values
+    final list = store.availableCities
         .where(
           (c) => '${c['name']} ${c['country']} ${c['id']}'
               .toLowerCase()
@@ -610,7 +620,7 @@ class _TravelScreenState extends ConsumerState<TravelScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text('Пять городов, 75 прогулок и поездки на 2–7 дней.'),
+          const Text('Городские прогулки и планы поездок на 2–7 дней.'),
           const SizedBox(height: 18),
           TextField(
             decoration: const InputDecoration(
@@ -652,7 +662,9 @@ class _TravelScreenState extends ConsumerState<TravelScreen> {
                             const Icon(Icons.check_circle_outline),
                         ],
                       ),
-                      Text('${c['country']} · 15 маршрутов'),
+                      Text(
+                        '${c['country']} · ${store.routesFor(c['id']).length} маршрутов',
+                      ),
                       const SizedBox(height: 8),
                       const Tag('Планы по дням · офлайн'),
                     ],
@@ -756,9 +768,18 @@ class _TravelScreenState extends ConsumerState<TravelScreen> {
           ),
           const SizedBox(height: 10),
           Center(
-            child: TextButton(
-              onPressed: () => context.go('/routes'),
-              child: const Text('Посмотреть 15 прогулок'),
+            child: Wrap(
+              alignment: WrapAlignment.center,
+              children: [
+                TextButton(
+                  onPressed: () => context.go('/routes'),
+                  child: const Text('Посмотреть прогулки'),
+                ),
+                TextButton(
+                  onPressed: () => context.push('/places'),
+                  child: const Text('Каталог мест'),
+                ),
+              ],
             ),
           ),
           Padding(
@@ -1587,7 +1608,7 @@ class _TravelScreenState extends ConsumerState<TravelScreen> {
       actions: [
         IconButton(
           tooltip: copy.message061,
-          onPressed: () => act(() => store.favorite(r.id)),
+          onPressed: () => toggleFavorite(r),
           icon: Icon(
             store.favorites.contains(r.id)
                 ? Icons.bookmark
