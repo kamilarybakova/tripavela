@@ -20,13 +20,13 @@ void main() {
       expect(store.routes.length, 15);
       expect(
         store.places.values.where((p) => p.data['cityId'] == 'istanbul').length,
-        109,
+        82,
       );
       final used = <String>{};
       for (final route in store.routes) {
         final ids = [...route.places, ...route.branches, route.alternative];
         expect(ids.toSet().length, 6);
-        expect(route.requiredMax, 0);
+        expect(route.requiredMax, greaterThanOrEqualTo(route.requiredMin));
         expect(File(route.image).existsSync(), true);
         for (final key in [
           'gettingThere',
@@ -62,7 +62,7 @@ void main() {
           }
         }
       }
-      expect(used.length, 90);
+      expect(used.length, 82);
       await store.db!.close();
       store.dispose();
     },

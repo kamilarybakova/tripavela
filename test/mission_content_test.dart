@@ -43,7 +43,7 @@ void main() {
           );
         }
       }
-      expect(titles.length, 109);
+      expect(titles.length, 82);
       expect(
         places.where((p) => p['missionCategory'] == 'Еда').length,
         greaterThan(15),

@@ -30,10 +30,10 @@ void main() {
         ...catalog['routes'],
         ...(planning['pois'] as List).where((p) => p['id'] != 'galataport'),
       ];
-      expect(entries.length, 175);
-      expect(entries.map((p) => p['image']).toSet().length, 175);
-      expect(manifest.length, 175);
-      expect(manifest.map((p) => p['sourceKey']).toSet().length, 175);
+      expect(entries.length, 143);
+      expect(entries.map((p) => p['image']).toSet().length, 143);
+      expect(manifest.length, 143);
+      expect(manifest.map((p) => p['sourceKey']).toSet().length, 143);
       final contents = <String>{};
       for (final entry in entries) {
         final asset = entry['image'] as String;

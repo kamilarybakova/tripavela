@@ -82,7 +82,7 @@ void main() {
           final routeId = ['s10', 's11'].contains(code)
               ? 'r0'
               : code == 's21'
-              ? 'p00'
+              ? store.route('r0').places.first
               : id;
           final router = GoRouter(
             routes: [

@@ -102,11 +102,14 @@ void main() {
       await tap('Дальше');
       await tap('Дальше');
       await tap('Показать маршруты');
-      await tap('Рынок, трамвай и море');
+      await tap('Сулеймание и вид на Золотой Рог');
       await tap('Выбрать прогулку');
       await tap('Начать прогулку');
       final id = store.active!['id'] as String;
-      expect(find.text(store.places['p03']!.name), findsNothing);
+      expect(
+        find.text(store.places[store.route('r4').branches.first]!.name),
+        findsNothing,
+      );
       await tap('Я на месте');
       expect(store.visits.length, 1);
       await tap('Добавить заметку');
@@ -129,7 +132,7 @@ void main() {
       expect(store.session(id)['stops'][1]['original'], isNotNull);
       await tap('Я на месте');
       await tap('Выбрать, куда дальше');
-      await tap('Фасад и афиша');
+      await tap('Терраса');
       await tap('Выбрать направление');
       expect(store.session(id)['branch'], 0);
       await tap('Я на месте');

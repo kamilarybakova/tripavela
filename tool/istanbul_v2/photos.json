@@ -1,0 +1,623 @@
+[
+ {
+  "key": "place:hagia-sophia",
+  "asset": "assets/images/place-hagia-sophia.jpg",
+  "title": "File:Hagia Sophia Mars 2013.jpg",
+  "author": "Arild Vågen",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Mars_2013.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "key": "place:blue-mosque",
+  "asset": "assets/images/place-blue-mosque.jpg",
+  "title": "File:Exterior of Sultan Ahmed I Mosque in Istanbul, Turkey 002.jpg",
+  "author": "Moonik",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Exterior_of_Sultan_Ahmed_I_Mosque_in_Istanbul,_Turkey_002.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "key": "route:r0",
+  "asset": "assets/images/route-r0.jpg",
+  "title": "File:Hagia Sophia and Blue Mosque.jpg",
+  "author": "Husain007",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_and_Blue_Mosque.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:hippodrome",
+  "asset": "assets/images/place-hippodrome.jpg",
+  "title": "File:Obelisk of Thutmosis III, Istanbul, Turkey 001.jpg",
+  "author": "Moonik",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Obelisk_of_Thutmosis_III,_Istanbul,_Turkey_001.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "key": "place:arasta-bazaar",
+  "asset": "assets/images/place-arasta-bazaar.jpg",
+  "title": "File:Arasta Bazaar, Istanbul.jpg",
+  "author": "Elisa.rolle",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Arasta_Bazaar,_Istanbul.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:little-hagia-sophia",
+  "asset": "assets/images/place-little-hagia-sophia.jpg",
+  "title": "File:Kuppel Kleine Hagia Sophia.jpg",
+  "author": "H005",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File:Kuppel_Kleine_Hagia_Sophia.jpg",
+  "licenseUrl": ""
+ },
+ {
+  "key": "place:ahmed-fountain",
+  "asset": "assets/images/place-ahmed-fountain.jpg",
+  "title": "File:Fountain of Ahmed III Topkapi.jpg",
+  "author": "This Photo was taken by Wolfgang Moroder.  \n\nFeel free to use my photos, but please mention me as the author and send me",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Fountain_of_Ahmed_III_Topkapi.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "key": "place:archaeology-museums",
+  "asset": "assets/images/place-archaeology-museums.jpg",
+  "title": "File:Istanbul Archaeological Museums (main building).jpg",
+  "author": "Yair Haklai",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Istanbul_Archaeological_Museums_(main_building).jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:cemberlitas",
+  "asset": "assets/images/place-cemberlitas.jpg",
+  "title": "File:Çemberlitaş Sütunu (89989).jpg",
+  "author": "Özgür Arda BAYRAM",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:%C3%87emberlita%C5%9F_S%C3%BCtunu_(89989).jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:nuruosmaniye",
+  "asset": "assets/images/place-nuruosmaniye.jpg",
+  "title": "File:Nuruosmaniye Camii.jpg",
+  "author": "Dmitry A. Mottl",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Nuruosmaniye_Camii.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:grand-bazaar",
+  "asset": "assets/images/place-grand-bazaar.jpg",
+  "title": "File:Grand Bazaar, Istanbul 6.jpg",
+  "author": "Slyronit",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Grand_Bazaar,_Istanbul_6.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:sahaflar",
+  "asset": "assets/images/place-sahaflar.jpg",
+  "title": "File:Sahaflar Çarşısı Çeşmesi.jpg",
+  "author": "Özgür Arda BAYRAM",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Sahaflar_%C3%87ar%C5%9F%C4%B1s%C4%B1_%C3%87e%C5%9Fmesi.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:beyazit-square",
+  "asset": "assets/images/place-beyazit-square.jpg",
+  "title": "File:Istanbul University Entrance Gate, 2025.jpg",
+  "author": "Medelam",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Istanbul_University_Entrance_Gate,_2025.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:suleymaniye-mosque",
+  "asset": "assets/images/place-suleymaniye-mosque.jpg",
+  "title": "File:Süleymaniye Mosque February 2013 01.jpg",
+  "author": "Arild Vågen",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:S%C3%BCleymaniye_Mosque_February_2013_01.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "key": "place:suleymaniye-terrace",
+  "asset": "assets/images/place-suleymaniye-terrace.jpg",
+  "title": "File:Süleymaniye Mosque from the Golden Horn Metro Bridge.jpg",
+  "author": "Maurice Flesier",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:S%C3%BCleymaniye_Mosque_from_the_Golden_Horn_Metro_Bridge.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:fasulyeciler",
+  "asset": "assets/images/place-fasulyeciler.jpg",
+  "title": "File:Kuru Fasulye pilav.jpg",
+  "author": "Satirdan kahraman",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Kuru_Fasulye_pilav.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:rustem-pasa",
+  "asset": "assets/images/place-rustem-pasa.jpg",
+  "title": "File:077 Istanbul Rustem Pasha mosque-june 2004.jpg",
+  "author": "Dosseman",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:077_Istanbul_Rustem_Pasha_mosque-june_2004.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:new-mosque",
+  "asset": "assets/images/place-new-mosque.jpg",
+  "title": "File:Panoramic view of Istanbul- Yeni Cami (The New Mosque), Galata Bridge. Turkey, Southeastern Europe.jpg",
+  "author": "Mstyslav Chernov",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Istanbul-_Yeni_Cami_(The_New_Mosque),_Galata_Bridge._Turkey,_Southeastern_Europe.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "key": "place:eminonu-pier",
+  "asset": "assets/images/place-eminonu-pier.jpg",
+  "title": "File:Vendeurs de balik ekmek (1).jpg",
+  "author": "Jpbazard Jean-Pierre Bazard",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Vendeurs_de_balik_ekmek_(1).jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "key": "place:galata-bridge",
+  "asset": "assets/images/place-galata-bridge.jpg",
+  "title": "File:Fishermen on Galata Bridge.JPG",
+  "author": "Martin Falbisoner",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Fishermen_on_Galata_Bridge.JPG",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:tunel-square",
+  "asset": "assets/images/place-tunel-square.jpg",
+  "title": "File:Nostalgic tram on Istiklal Avenue in Istanbul.jpg",
+  "author": "Janderk1968",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Nostalgic_tram_on_Istiklal_Avenue_in_Istanbul.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "key": "place:cicek-pasaji",
+  "asset": "assets/images/place-cicek-pasaji.jpg",
+  "title": "File:Istanbul Çiçek Pasajı - Cité de Pera.jpg",
+  "author": "Baristarim at English Wikipedia",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File:Istanbul_%C3%87i%C3%A7ek_Pasaj%C4%B1_-_Cit%C3%A9_de_Pera.jpg",
+  "licenseUrl": ""
+ },
+ {
+  "key": "place:cevahir-bedesten",
+  "asset": "assets/images/place-cevahir-bedesten.jpg",
+  "title": "File:Grand Bazaar Istanbul - panoramio.jpg",
+  "author": "Laima Gūtmane (simka…",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Grand_Bazaar_Istanbul_-_panoramio.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "key": "place:karakoy-pier",
+  "asset": "assets/images/place-karakoy-pier.jpg",
+  "title": "File:Karaköy Mars 2013 02.jpg",
+  "author": "Arild Vågen",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Karak%C3%B6y_Mars_2013_02.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "key": "place:galata-tower",
+  "asset": "assets/images/place-galata-tower.jpg",
+  "title": "File:Galata Tower January 2015.JPG",
+  "author": "Martin Falbisoner",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Galata_Tower_January_2015.JPG",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:st-antoine",
+  "asset": "assets/images/place-st-antoine.jpg",
+  "title": "File:St. Anthony of Padua Church, Istanbul - Facade.jpg",
+  "author": "Alena Belova for Exhibo",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:St._Anthony_of_Padua_Church,_Istanbul_-_Facade.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:pera-museum",
+  "asset": "assets/images/place-pera-museum.jpg",
+  "title": "File:Istanbul Beyoglu Pera museum.jpg",
+  "author": "Tatiana Matlina",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Istanbul_Beyoglu_Pera_museum.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "key": "place:galatasaray-gate",
+  "asset": "assets/images/place-galatasaray-gate.jpg",
+  "title": "File:Gate of Galatasaray High School-.jpg",
+  "author": "Yair Haklai",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Gate_of_Galatasaray_High_School-.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:taksim-square",
+  "asset": "assets/images/place-taksim-square.jpg",
+  "title": "File:Details of Monument of the Republic - Taksim (1).jpg",
+  "author": "Kurmanbek",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Details_of_Monument_of_the_Republic_-_Taksim_(1).jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:dolmabahce-mosque",
+  "asset": "assets/images/place-dolmabahce-mosque.jpg",
+  "title": "File:Dolmabahçe Mosque Mars 2013.jpg",
+  "author": "Arild Vågen",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Dolmabah%C3%A7e_Mosque_Mars_2013.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "key": "place:dolmabahce-palace",
+  "asset": "assets/images/place-dolmabahce-palace.jpg",
+  "title": "File:Gate of the Sultan at the Dolmabahçe Palace in Istanbul, Turkey 001.JPG",
+  "author": "Moonik",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Gate_of_the_Sultan_at_the_Dolmabah%C3%A7e_Palace_in_Istanbul,_Turkey_001.JPG",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "key": "place:naval-museum",
+  "asset": "assets/images/place-naval-museum.jpg",
+  "title": "File:Gilt relief panel from Ottoman caique Istanbul Naval Museum 2024.jpg",
+  "author": "Furkan Akkurt",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Gilt_relief_panel_from_Ottoman_caique_Istanbul_Naval_Museum_2024.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:besiktas-pier",
+  "asset": "assets/images/place-besiktas-pier.jpg",
+  "title": "File:Besiktas, Dentur Avrasya, Istanbul (P1100269) (cropped).jpg",
+  "author": "Matti Blume",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Besiktas,_Dentur_Avrasya,_Istanbul_(P1100269)_(cropped).jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+ },
+ {
+  "key": "place:yildiz-park",
+  "asset": "assets/images/place-yildiz-park.jpg",
+  "title": "File:Yildiz Park 02.jpg",
+  "author": "Chapultepec",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File:Yildiz_Park_02.jpg",
+  "licenseUrl": ""
+ },
+ {
+  "key": "place:ciragan-palace",
+  "asset": "assets/images/place-ciragan-palace.jpg",
+  "title": "File:Ciragan Palace 2014.JPG",
+  "author": "This Photo was taken by Wolfgang Moroder.  \n\nFeel free to use my photos, but please mention me as the author and send me",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Ciragan_Palace_2014.JPG",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "key": "place:rumeli-hisari",
+  "asset": "assets/images/place-rumeli-hisari.jpg",
+  "title": "File:Castle - Rumelihisari - Fort of Rumeli - panoramio.jpg",
+  "author": "---=XEON=---",
+  "license": "CC BY 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Castle_-_Rumelihisari_-_Fort_of_Rumeli_-_panoramio.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+ },
+ {
+  "key": "place:rumelihisari-coast",
+  "asset": "assets/images/place-rumelihisari-coast.jpg",
+  "title": "File:'fatih sultan mehmet bridge, rumelihisarı - panoramio.jpg",
+  "author": "Akrep Scorpion",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:%27fatih_sultan_mehmet_bridge,_rumelihisar%C4%B1_-_panoramio.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "key": "place:red-castle",
+  "asset": "assets/images/place-red-castle.jpg",
+  "title": "File:Living in a house with a view of the golden horn (Phanar Greek Orthodox College and Bulgarian St. Stephen Church).jpg",
+  "author": "Nuriyasargursoy",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Living_in_a_house_with_a_view_of_the_golden_horn_(Phanar_Greek_Orthodox_College_and_Bulgarian_St._Stephen_Church).jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:kiremit-houses",
+  "asset": "assets/images/place-kiremit-houses.jpg",
+  "title": "File:Colorful Balat houses.jpg",
+  "author": "Antoloji",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Colorful_Balat_houses.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:chora",
+  "asset": "assets/images/place-chora.jpg",
+  "title": "File:Saint-Sauveur-in-Chora - Pantocrator de l'ésonarthex.jpg",
+  "author": "Eusebius",
+  "license": "CC BY 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Saint-Sauveur-in-Chora_-_Pantocrator_de_l%27%C3%A9sonarthex.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+ },
+ {
+  "key": "place:eyup-pier",
+  "asset": "assets/images/place-eyup-pier.jpg",
+  "title": "File:Eyüpsultan Pier.jpg",
+  "author": "Jelican9",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Ey%C3%BCpsultan_Pier.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:eyup-cemetery-path",
+  "asset": "assets/images/place-eyup-cemetery-path.jpg",
+  "title": "File:Gravestones at the Eyüp cemetery, Istanbul, Turkey 001.jpg",
+  "author": "Moonik",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Gravestones_at_the_Ey%C3%BCp_cemetery,_Istanbul,_Turkey_001.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "key": "place:pierre-loti",
+  "asset": "assets/images/place-pierre-loti.jpg",
+  "title": "File:Pierre Loti Hill - View of the Golden Horn.jpg",
+  "author": "Alena Belova for Exhibo",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Pierre_Loti_Hill_-_View_of_the_Golden_Horn.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:uskudar-pier",
+  "asset": "assets/images/place-uskudar-pier.jpg",
+  "title": "File:Iskele Mosque Uskudar.jpg",
+  "author": "Donnyhoca",
+  "license": "CC BY 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Iskele_Mosque_Uskudar.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+ },
+ {
+  "key": "place:maidens-tower",
+  "asset": "assets/images/place-maidens-tower.jpg",
+  "title": "File:Maiden tower, Istanbul (P1100207).jpg",
+  "author": "Matti Blume",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Maiden_tower,_Istanbul_(P1100207).jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+ },
+ {
+  "key": "place:kadikoy-pier",
+  "asset": "assets/images/place-kadikoy-pier.jpg",
+  "title": "File:Ferry on Kadıkoy dock.jpg",
+  "author": "Adil Amiraslanov",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Ferry_on_Kad%C4%B1koy_dock.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "route:r1",
+  "asset": "assets/images/route-r1.jpg",
+  "title": "File:Topkapi Palace Bosphorus 2007 02.JPG",
+  "author": "Gryffindor",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File:Topkapi_Palace_Bosphorus_2007_02.JPG",
+  "licenseUrl": ""
+ },
+ {
+  "key": "place:ortakoy-kumpir",
+  "asset": "assets/images/place-ortakoy-kumpir.jpg",
+  "title": "File:Kumpir2.jpg",
+  "author": "Atilim Gunes Baydin",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Kumpir2.jpg",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+ },
+ {
+  "key": "place:patriarchate",
+  "asset": "assets/images/place-patriarchate.jpg",
+  "title": "File:Phanar - St George Potiras - P1030406.JPG",
+  "author": "User:Vmenkov",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Phanar_-_St_George_Potiras_-_P1030406.JPG",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "key": "place:eyup-square",
+  "asset": "assets/images/place-eyup-square.jpg",
+  "title": "File:Eyüp Camii 2022 (2).jpg",
+  "author": "Sureta",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Ey%C3%BCp_Camii_2022_(2).jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:eyup-teleferik",
+  "asset": "assets/images/place-eyup-teleferik.jpg",
+  "title": "File:EyüpGondolaBaseStation.JPG",
+  "author": "CeeGee",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Ey%C3%BCpGondolaBaseStation.JPG",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "key": "route:r2",
+  "asset": "assets/images/route-r2.jpg",
+  "title": "File:Sultanahmet ferry on the Bosphorus in Istanbul, Turkey 001.jpg",
+  "author": "Moonik",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Sultanahmet_ferry_on_the_Bosphorus_in_Istanbul,_Turkey_001.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "key": "route:r3",
+  "asset": "assets/images/route-r3.jpg",
+  "title": "File:Istanbul - Grand Bazaar (55107617958).jpg",
+  "author": "Jorge Franganillo",
+  "license": "CC BY 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Istanbul_-_Grand_Bazaar_(55107617958).jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+ },
+ {
+  "key": "route:r5",
+  "asset": "assets/images/route-r5.jpg",
+  "title": "File:Yeni Camii Istanbul Dome.jpg",
+  "author": "H005",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Yeni_Camii_Istanbul_Dome.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "key": "route:r6",
+  "asset": "assets/images/route-r6.jpg",
+  "title": "File:Galata Tower, Golden Horn (52397065499).jpg",
+  "author": "Sonse",
+  "license": "CC BY 2.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Galata_Tower,_Golden_Horn_(52397065499).jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+ },
+ {
+  "key": "route:r7",
+  "asset": "assets/images/route-r7.jpg",
+  "title": "File:Tram-trolley on Istiklal Avenue, Istanbul (June 2009).jpg",
+  "author": "Harvey Barrison",
+  "license": "CC BY-SA 2.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Tram-trolley_on_Istiklal_Avenue,_Istanbul_(June_2009).jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+ },
+ {
+  "key": "route:r8",
+  "asset": "assets/images/route-r8.jpg",
+  "title": "File:Dolmabahçe Palace and Sultans gate april 19 2014.jpg",
+  "author": "This Photo was taken by Wolfgang Moroder.  \n\nFeel free to use my photos, but please mention me as the author and send me",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Dolmabah%C3%A7e_Palace_and_Sultans_gate_april_19_2014.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "key": "route:r9",
+  "asset": "assets/images/route-r9.jpg",
+  "title": "File:Ortaköy Mosque and Bosphorus Bridge, March 2024 02.jpg",
+  "author": "Calistemon",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Ortak%C3%B6y_Mosque_and_Bosphorus_Bridge,_March_2024_02.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "route:r10",
+  "asset": "assets/images/route-r10.jpg",
+  "title": "File:Rumeli Hisari- stronhold. Istanbul, Bosphorus - panoramio.jpg",
+  "author": "Modris Putns",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Rumeli_Hisari-_stronhold._Istanbul,_Bosphorus_-_panoramio.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "key": "route:r11",
+  "asset": "assets/images/route-r11.jpg",
+  "title": "File:Balat (Fatih, Istanbul) 09.jpg",
+  "author": "Milica Buha",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Balat_(Fatih,_Istanbul)_09.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "route:r12",
+  "asset": "assets/images/route-r12.jpg",
+  "title": "File:Chora Church 2024.jpg",
+  "author": "Tadam",
+  "license": "CC0",
+  "url": "https://commons.wikimedia.org/wiki/File:Chora_Church_2024.jpg",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+ },
+ {
+  "key": "route:r13",
+  "asset": "assets/images/route-r13.jpg",
+  "title": "File:View from Pierre Loti Hill 7.jpg",
+  "author": "Joseolgon",
+  "license": "CC BY 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:View_from_Pierre_Loti_Hill_7.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+ },
+ {
+  "key": "route:r14",
+  "asset": "assets/images/route-r14.jpg",
+  "title": "File:Maiden's Tower at Sunset in Istanbul.jpg",
+  "author": "Wovegiv9",
+  "license": "CC0",
+  "url": "https://commons.wikimedia.org/wiki/File:Maiden%27s_Tower_at_Sunset_in_Istanbul.jpg",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+ },
+ {
+  "key": "place:eyup-mosque",
+  "asset": "assets/images/place-eyup-mosque.jpg",
+  "title": "File:Eyüp Sultan Camii - panoramio.jpg",
+  "author": "Mister No",
+  "license": "CC BY 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Ey%C3%BCp_Sultan_Camii_-_panoramio.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+ },
+ {
+  "key": "place:edirnekapi-walls",
+  "asset": "assets/images/place-edirnekapi-walls.jpg",
+  "title": "File:Theodosian Walls of Constantinople, Istanbul (24053561188).jpg",
+  "author": "Carole Raddato from FRANKFURT, Germany",
+  "license": "CC BY-SA 2.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Theodosian_Walls_of_Constantinople,_Istanbul_(24053561188).jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+ },
+ {
+  "key": "route:r4",
+  "asset": "assets/images/route-r4.jpg",
+  "title": "File:Süleymaniye Mosque, Istanbul, 20260606 0805 1307.jpg",
+  "author": "Jakub Hałun",
+  "license": "CC BY 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:S%C3%BCleymaniye_Mosque,_Istanbul,_20260606_0805_1307.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+ },
+ {
+  "key": "place:moda-coast",
+  "asset": "assets/images/place-moda-coast.jpg",
+  "title": "File:Kadıköy, Moda Pier 19.05.2025 01.jpg",
+  "author": "Wiki leylek",
+  "license": "CC BY 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Kad%C4%B1k%C3%B6y,_Moda_Pier_19.05.2025_01.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+ },
+ {
+  "key": "place:topkapi-palace",
+  "asset": "assets/images/place-topkapi-palace.jpg",
+  "title": "File:Third Courtyard garden (Topkapı Palace)-2.jpg",
+  "author": "Yair Haklai",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Third_Courtyard_garden_(Topkap%C4%B1_Palace)-2.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "key": "place:spice-bazaar",
+  "asset": "assets/images/place-spice-bazaar.jpg",
+  "title": "File:Spices on Spice Bazaar in Istanbul 04.jpg",
+  "author": "Miomir Magdevski",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Spices_on_Spice_Bazaar_in_Istanbul_04.jpg",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ }
+]

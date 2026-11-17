@@ -26,7 +26,7 @@ void main() {
         database: await databaseFactoryMemory.openDatabase('suggestion-ui'),
       );
       final f = store.draft
-        ..addAll({'indoors': true, 'startHour': 12, 'startDate': '2026-10-26'});
+        ..addAll({'indoors': true, 'startHour': 12, 'startDate': '2026-10-25'});
       await store.setDraft(f);
     });
     final router = GoRouter(
@@ -70,17 +70,17 @@ void main() {
     }
 
     await openProposal();
-    expect(find.text('Дата старта: 2026-10-27'), findsWidgets);
-    expect(store.draft['startDate'], '2026-10-26');
+    expect(find.text('Дата старта: 2026-10-26'), findsWidgets);
+    expect(store.draft['startDate'], '2026-10-25');
     await tester.tap(find.text('Отмена').last);
     await tester.pumpAndSettle();
-    expect(store.draft['startDate'], '2026-10-26');
+    expect(store.draft['startDate'], '2026-10-25');
     await openProposal();
     final apply = find.text('Применить условия и посмотреть');
     await tester.ensureVisible(apply);
     await tester.tap(apply);
     await tester.pumpAndSettle();
-    expect(store.draft['startDate'], '2026-10-27');
+    expect(store.draft['startDate'], '2026-10-26');
     expect(store.draft['indoors'], true);
     expect(find.text('О прогулке'), findsOneWidget);
     await tester.pumpWidget(const SizedBox());

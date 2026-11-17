@@ -25,7 +25,8 @@ void main() {
             database: await databaseFactoryMemory.openDatabase('idea-$budget'),
           );
           await store.setDraft({...store.draft, 'budget': budget});
-          id = await store.start('r0');
+          // r5 начинается с Египетского базара: задание с необязательной покупкой.
+          id = await store.start('r5');
           await store.arrive(id);
         });
         final router = GoRouter(
@@ -51,8 +52,9 @@ void main() {
           ),
         );
         await tester.pumpAndSettle();
-        final free = store.places['p00']!.missionFreeAlternative;
-        expect(find.text('Попробуйте туршу'), findsOneWidget);
+        final stop = store.places[store.route('r5').places.first]!;
+        final free = stop.missionFreeAlternative;
+        expect(find.text(stop.mission), findsOneWidget);
         expect(find.text(free), budget == 0 ? findsOneWidget : findsNothing);
         if (budget != 0) {
           await tester.tap(find.text('Без покупки'));

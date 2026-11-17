@@ -84,20 +84,45 @@ void main() {
     },
   );
 
-  test('Indoor venues respect Monday closures and opening hour', () {
+  test('Indoor venues respect their closed weekdays and opening hour', () {
     final indoors = store.routes.where((r) => r.indoor).toList();
-    expect(indoors.length, 2);
-    final monday = defaultFilters()
-      ..addAll({'indoors': true, 'startDate': '2026-10-26', 'startHour': 12});
-    expect(matchRoutes(store.routes, monday), isEmpty);
-    final proposed = suggestRoutes(store.routes, monday);
+    expect(indoors.length, greaterThanOrEqualTo(2));
+    final monday = DateTime(2026, 10, 26);
+    Map<String, dynamic> at(DateTime date, int hour) => defaultFilters()
+      ..addAll({
+        'indoors': true,
+        'time': 1000,
+        'distance': 100000,
+        'budget': 1000000,
+        'startDate': date.toIso8601String().substring(0, 10),
+        'startHour': hour,
+      });
+    for (final r in indoors) {
+      final closed = (r.data['closedWeekdays'] as List).cast<int>();
+      for (var d = 0; d < 7; d++) {
+        final date = monday.add(Duration(days: d));
+        expect(
+          r.matches(at(date, r.earliestStart)),
+          !closed.contains(date.weekday),
+          reason: '${r.id} weekday ${date.weekday}',
+        );
+      }
+      if (r.earliestStart > 0) {
+        final open = monday.add(
+          Duration(days: List.generate(7, (d) => d).firstWhere(
+            (d) => !closed.contains(d + 1),
+          )),
+        );
+        expect(r.matches(at(open, r.earliestStart - 1)), false, reason: r.id);
+      }
+    }
+    final closedRoute = indoors.firstWhere(
+      (r) => (r.data['closedWeekdays'] as List).isNotEmpty,
+    );
+    final day = (closedRoute.data['closedWeekdays'] as List).first as int;
+    final request = at(monday.add(Duration(days: day - 1)), 12);
+    final proposed = suggestRoutes(store.routes, request);
     expect(proposed.every((p) => p.filters['indoors'] == true), true);
-    expect(proposed.every((p) => p.filters['startDate'] == '2026-10-27'), true);
-    final early = defaultFilters()..addAll({'indoors': true, 'startHour': 10});
-    expect(matchRoutes(store.routes, early), isEmpty);
-    final daytime = defaultFilters()
-      ..addAll({'indoors': true, 'startHour': 12});
-    expect(matchRoutes(store.routes, daytime).length, 2);
   });
 
   test(

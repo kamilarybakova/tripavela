@@ -23,7 +23,7 @@ void main() {
   });
   test('Catalog has fifteen Istanbul adventures and complete real places', () {
     expect(store.routes.length, 15);
-    expect(store.places.length, 229);
+    expect(store.places.length, 202);
     expect(
       store.routes
           .map((r) => r.data)
@@ -105,12 +105,15 @@ void main() {
     expect(t['stops'][2]['place'], store.route('r0').branches[1]);
     await store.branch(id, 0);
     expect(store.session(id)['branch'], 1);
-    await store.replace(id, 'p05', 'Закрыто');
+    await store.replace(id, store.route('r0').alternative, 'Закрыто');
     expect(
       store.session(id)['stops'][2]['original'],
       store.route('r0').branches[1],
     );
-    expect(store.visits.any((v) => v['place'] == 'p05'), false);
+    expect(
+      store.visits.any((v) => v['place'] == store.route('r0').alternative),
+      false,
+    );
   });
   test('Paused session survives repository reload and can end early', () async {
     final id = await store.start('r0');
@@ -171,7 +174,7 @@ void main() {
       await store.arrive(id);
       await store.mission(id, 'done');
       await store.advance(id);
-      await store.replace(id, 'p05', 'Закрыто');
+      await store.replace(id, store.route('r0').alternative, 'Закрыто');
       await store.arrive(id);
       await store.advance(id);
       await store.branch(id, 0);
